@@ -1,0 +1,71 @@
+<body>
+		<h1>Qui êtes vous?</h1>
+		<!--<img src="Images/Among-Bleu.png" alt ="Votre navigateur est Imposteur"/> DIMENSION A FAIRE EN CSS -->
+		<main>
+			<br>
+			<form method="post" action="#">
+		<fieldset> 
+		<legend>Informations nécessaires</legend> <!-- Collecte des informations pour l'inscription à la newsletter avec plusieurs modules --> 
+		
+		<label>Genre:</label>
+		<input type="radio" name="genre" id="mme">  
+		<label for="mme">Madame</label>
+		<input type="radio" name="genre" id="mr" > 
+		<label for="mr">Monsieur</label>
+		<input type="radio" name="genre" id="?">
+		<label for="?">Autre</label>
+		<input type="radio" name="genre" id="sus">
+		<label for="sus">Imposteur</label>
+		
+		<br><br> 
+		<label for="nom">Nom :</label >
+		<input type="text" name="nom" id="nom" value="Blue"/>
+		<br><br>
+		
+		<label for="prenom">Prénom :</label >
+		<input type="text" name="prenom" id="prenom" placeholder="Yellow"/>
+		<br><br>
+		
+		<label for="courriel">Courriel* : </label >
+		<input type="email" name="courriel" id="courriel" placeholder="among.us@sussy.com" />
+	</fieldset>
+	<fieldset>
+	<label>J'accepte les <a href="#">conditions générales de la Newsletter*</a></label>
+	<input type="radio" name="..." id="oui">
+	<label for="oui">Oui</label>
+	<input type="radio" name="..." id="non">
+	<label for="non">Non</label>
+	<br><br>
+	<input type="submit" name="Valider l'inscription" id="soumission" value="Valider l'inscription"/>
+	</fieldset>
+	<fieldset>
+		<legend>Votre avis nous intéresse!</legend>
+		<label for="description">Message :</label > <br>
+		<textarea rows="10" cols="50" name="description" id="description" maxlength="200"></textarea >
+		<br><br>
+		<label for="comment">Comment avez vous connu Among Tracker?</label>
+		<select id="comment" name="comment">
+			<option value="0">-Choisir-</option>
+			<option value="fam">Grâce à des amis</option>
+			<option value="res">Grâce aux réseaux sociaux (Serveur Discord)</option>
+			<option value="etu">Grâce au chat in-game</option>
+			<option value="ens">Grâce à un enseignant Junia</option>
+		</select>
+		<br>	
+		<input type="submit" name="Envoyer" id="soumission" value="Envoyer"/>
+		<input type="reset">
+		<br>
+	</fieldset>
+	<label>(*)Mentions Obligatoires</label>
+	<h2>A quoi sert cette Newsletter? Bonne question</h2>
+	<h3>Cette Newsletter vous aide pour :</h3>
+	<ul><li>Être au courant des dernières nouveautés du jeu au plus vite ! (Mises à jours, corrections de bug etc...)</li>
+		<li>Nous permettre de savoir comment améliorer le site</li>
+		<li>Connaitre si des réductions de skins sont disponibles</li>
+		<li>Augmenter vos chances d'être <a href="https://clement.tassin.go.yo.fr" target = _blank>imposteur<a>...</li><!--Attention!! Changer le style en css pour l easter egg, style = none si je dis pas de conneries-->
+			</ul>
+	<br>
+
+
+
+		</main>
