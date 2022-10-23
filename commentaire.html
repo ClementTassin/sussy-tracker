@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+	<meta charset="utf-8">
+	<title>Accueil</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<video id="background-video" autoplay loop muted>
+		<source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">		
+		</video>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://i.pinimg.com/originals/5b/80/9c/5b809c565b055ccc4f77ae388e527fa4.png">
+	</head>
+
+    <body>
+        <fieldset>
+            <legend>Votre avis nous intéresse!</legend>
+            <label for="description">Message :</label > <br>
+            <textarea rows="10" cols="50" name="description" id="description" maxlength="200"></textarea >
+            <br><br>
+            <label for="comment">Comment avez vous connu Among Tracker?</label>
+            <select id="comment" name="comment">
+                <option value="0">-Choisir-</option>
+                <option value="fam">Grâce à des amis</option>
+                <option value="res">Grâce aux réseaux sociaux (Serveur Discord)</option>
+                <option value="etu">Grâce au chat in-game</option>
+                <option value="ens">Grâce à un enseignant Junia</option>
+            </select>
+            <br>	
+            <input type="submit" name="Envoyer" id="soumission" value="Envoyer"/>
+            <input type="reset">
+            <br>
+        </fieldset>
+    </body>
+</html>
