@@ -5,6 +5,12 @@ table {
 td,th { 
     border-style: solid;
 }
+#morchien{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
 
 html {
     height: 200vh;
@@ -23,6 +29,21 @@ html {
     padding: 0;
     font-family: sans-serif;
     background: linear-gradient(#141e30, #243b55);
+  }
+  .Amog{
+    height:50px;
+  }
+  #Amog_Bleu{
+    position:relative;
+    left:225px;
+  }
+  #Amog_Noir{
+    position: relative;
+    left:78%
+  }
+  #Amog_Blanc{
+    position: relative;
+    left:78%;
   }
   .reason{
     margin: auto;
@@ -218,3 +239,8 @@ html {
       bottom: 100%;
     }
   }
+
+.texte_noir{
+    color : rgb(149, 149, 150)
+}
+
