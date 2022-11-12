@@ -35,15 +35,15 @@ html {
   }
   #Amog_Bleu{
     position:relative;
-    left:225px;
+    left:50%;
   }
   #Amog_Noir{
     position: relative;
-    left:78%
+    left:100%;
   }
   #Amog_Blanc{
     position: relative;
-    left:78%;
+    left:100%;
   }
   .reason{
     margin: auto;
