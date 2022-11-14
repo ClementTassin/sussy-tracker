@@ -31,6 +31,7 @@ html {
     background: linear-gradient(#141e30, #243b55);
   }
   .Amog{
+    position: relative;
     height:50px;
   }
   #Amog_Bleu{
@@ -243,4 +244,16 @@ html {
 .texte_noir{
     color : rgb(149, 149, 150)
 }
-
+.texte_blanc{
+    color : rgb(255, 255, 255)
+}
+#background-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#relative{
+    position: relative;
+}
