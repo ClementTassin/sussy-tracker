@@ -1,0 +1,135 @@
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border-style: solid;
+}
+
+
+html {
+    height: 200vh;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.Amog {
+    position: relative;
+    height: 50px;
+}
+
+#Amog_Bleu {
+    position: relative;
+    left: 50%;
+}
+
+#Amog_Noir {
+    position: relative;
+    left: 100%;
+}
+
+#Amog_Blanc {
+    position: relative;
+    left: 100%;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+#relative {
+    position: relative;
+    z-index: 1;
+}
+display-box{
+    background-color: red;
+    width: 17px;
+    height: 12px;
+    z-index: 2;
+    position: relative;
+    opacity: 50%;
+}
+/*boite de la vent au launchpad*/
+.boite0{
+    bottom: 275px;
+    left: 208px;
+}
+/*boite de la ventlocker room*/
+.boite1 {
+    bottom: 233px;
+    left: 498px;
+}
+/*boite de la vent au réacteur*/
+.boite2 {
+    bottom: 557px;
+    left: 393px;
+}
+/*boite de la vent en déconta*/
+.boite3 {
+    bottom: 390px;
+    left: 568px;
+}
+/*boite de la vent au laboratoire*/
+.boite4 {
+    bottom:728px;
+    left: 701px;
+}
+/*boite de la vent en office*/
+.boite5 {
+    bottom:945px;
+    left: 748px;
+}
+/*boite de la vent en greenhouse*/
+.boite6 {
+    bottom: 1127px;
+    left: 875px;
+}
+/*boite de la vent en admin*/
+.boite7 {
+    bottom: 948px;
+    left: 1000px;
+}
+/*boite de la vent en Medbay*/
+.boite8 {
+    bottom: 462px;
+    left: 806px;
+}
+/*boite de la vent en cafetaria*/
+.boite9 {
+    bottom: 754px;
+    left: 1042px;
+}
+/*boite de la vent en Balcony*/
+.boiteA {
+    bottom: 543px;
+    left: 1038px;
+}
+.boiteB {
+    bottom: 275px;
+    left: 208px;
+}
+
+.vent:hover .boite {
+    z-index: 2;
+}
