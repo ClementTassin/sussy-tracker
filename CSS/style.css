@@ -1,0 +1,307 @@
+
+table { 
+    border-collapse: collapse;
+}
+td,th { 
+    border-style: solid;
+}
+#morchien{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+html {
+    height: 240vh;
+  }
+  fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  .Amog{
+    position: relative;
+    height:50px;
+  }
+  #Amog_Bleu{
+    position:relative;
+    left:50%;
+  }
+  #Amog_Noir{
+    position: relative;
+    left:100%;
+  }
+  #Amog_Blanc{
+    position: relative;
+    left:100%;
+  }
+  .reason{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    font-size: 17px;
+    color: #fff;
+  }
+  .login-box {
+    margin: auto;
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  .login-box .user-box {
+    position: relative;
+  }
+  .login-box .user-box input {
+    width: 60%;
+    padding: 2px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .point{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+#submit {
+    position: relative;
+    display: inline-block;
+    padding: 20px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+  }
+#submit:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 10px #03e9f4;
+  }
+
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  #condition:visited{
+    color: #03e9f4;
+    text-decoration: none;
+  }
+  #condition:link{
+    color: #03e9f4;
+    text-decoration: none;
+  }
+  #comm:link{
+    color: #03e9f4;
+    text-decoration: none;
+  }
+  #comm:visited{
+    color: #03e9f4;
+    text-decoration: none;
+  }
+  #comm{
+    font-size: 30px;
+  }
+  #comm:hover{
+    font-size: 35px;
+    text-decoration: underline;
+  }
+  #sus{
+    text-decoration: none;
+    color: #fff;
+  }
+  #sus:link{
+    text-decoration: none;
+    color: #fff;
+  }
+  #sus:visited{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+.texte_noir{
+    color : rgb(149, 149, 150)
+}
+.texte_blanc{
+    color : rgb(255, 255, 255)
+}
+#background-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#relative{
+    position: relative;
+}
+
+#onglets
+{
+    font : bold 11px Batang, arial, serif;
+    list-style-type : none;
+    padding-bottom : 24px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    border-bottom : 1px solid #9EA0A1;
+    margin-left : -100px;
+    position : absolute;
+    border : 1px solid transparent;
+    padding : 0;
+    font : bold 11px Batang, arial, serif;
+    list-style-type : none;
+    left : 50%;
+    margin-top : 0;
+    width : 430px;
+    
+}
+#onglets li
+{
+    float : left;
+    height : 21px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    background-color: #F4F9FD;
+    margin : 2px 2px 0 2px !important;  /* Pour les navigateurs autre que IE */
+    margin : 1px 2px 0 2px;  /* Pour IE  */
+    border : 1px solid #9EA0A1;
+}
+#onglets a
+{
+    display : block;
+    color : #666;
+    text-decoration : none;
+    padding : 4px;
+}
+#onglets a:hover
+{
+    background : #fff;
+}
+#onglets a.active
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+#menu
+{
+    border-bottom : 1px solid #9EA0A1;
+    padding-bottom : 25px;
+}
