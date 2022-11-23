@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway:wght@200&display=swap');
+html{
+    height: 400vh;
+}
+
+#background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+body{
+    background: linear-gradient(#141e30, #243b55);
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    justify-content: center;
+}
+#logo{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+nav{
+    z-index: 1;
+    background: linear-gradient(#141e30, #243b55);
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    align-items: center;
+    gap: 230px;
+}
+p {
+	text-align: center;
+}
+
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+    display: flex;
+    gap: 50px;
+	}
+	
+nav ul li {
+	display:inline-block;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 20%;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 85%;
+    background-color:#004ea7;
+  }
+
+
+  nav ul ul {
+	display: none;
+	position: absolute; 
+}
+	
+
+nav ul li:hover > ul {
+    animation: pop 0.8s ;
+    animation-fill-mode: forwards;  
+    display:inherit;
+    border-radius: 20px;
+    top : 55px;
+}
+
+@keyframes pop {
+    from{
+        background-color: #141e30;
+        top: 0px;
+        opacity: 0%;
+    }
+    to{
+        background-color:#7fafe6;
+        top : -60px;
+        opacity: 100%;
+    }
+}
+
+nav ul ul li {
+	width: 140px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+  
+h1 {
+    text-align: center;
+    width: 25%;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    overflow: hidden; 
+    border-right: 0.15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret 0.5s step-end infinite;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 25% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    top: 200px;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;   
+    animation: waviy 2.5s infinite;
+    animation-delay: calc(.1s * var(--i))
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+	
+
+li > a:after { content:  ' ↓'; }
+li > a:only-child:after { content: ''; }
