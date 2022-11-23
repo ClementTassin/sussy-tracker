@@ -32,7 +32,7 @@ nav{
     margin-right: 50px;
     border-radius: 30px;
     align-items: center;
-    gap: 230px;
+    justify-content: space-around;
 }
 p {
 	text-align: center;
@@ -107,11 +107,12 @@ nav ul li:hover > ul {
         background-color:#7fafe6;
         top : -60px;
         opacity: 100%;
+        
     }
 }
 
 nav ul ul li {
-	width: 140px;
+	width: 120px;
 	float:none;
 	display:list-item;
 	position: relative;
@@ -119,7 +120,7 @@ nav ul ul li {
   
 h1 {
     text-align: center;
-    width: 25%;
+    width: 50%;
     color: #fff;
     font-family: 'Kanit', sans-serif;
     overflow: hidden; 
@@ -135,9 +136,9 @@ h1 {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 25% }
+    to { width: 50% }
   }
-  
+
 
   @keyframes blink-caret {
     from, to { border-color: transparent }
@@ -171,6 +172,3 @@ h1 {
     }
   }
 	
-
-li > a:after { content:  ' ↓'; }
-li > a:only-child:after { content: ''; }
