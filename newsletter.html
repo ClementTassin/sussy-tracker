@@ -21,27 +21,27 @@
         <legend class="point">Informations nécessaires</legend> <!-- Collecte des informations pour l'inscription à la newsletter avec plusieurs modules --> 
         <div class="user-box1">
         <label class="point">Genre:</label><br><br>
-        <input type="radio" name="genre" id="mme">  
+        <input type="radio" name="genre" id="mme" required="required">  
         <label for="mme" class="point">Madame</label><br>
-        <input type="radio" name="genre" id="mr" > 
+        <input type="radio" name="genre" id="mr" required="required"> 
         <label for="mr" class="point">Monsieur</label><br>
-        <input type="radio" name="genre" id="?">
+        <input type="radio" name="genre" id="?" required="required">
         <label for="?" class="point">Hélicoptère d'assaut AH-64 Apache</label><br>
         </div>
         <br><br> 
         <div class="user-box">
         <label for="nom">Nom :</label >
-        <input type="text" name="nom" id="nom" placeholder="Blue"/>
+        <input type="text" name="nom" id="nom" placeholder="Blue" required="required" />
         <br><br>
         </div>
         <div class="user-box">
         <label for="prenom">Prénom :</label >
-        <input type="text" name="prenom" id="prenom" placeholder="Yellow"/>
+        <input type="text" name="prenom" id="prenom" placeholder="Yellow" required="required"/>
         <br><br>
 	</div>
 	<div class="user-box">
 	<label for="courriel">Courriel : </label >
-	<input type="email" name="courriel" id="courriel" placeholder="among.us@sussy.com" /><br>
+	<input type="email" name="courriel" id="courriel" placeholder="among.us@sussy.com" required="required"/><br>
 	</div>
 	<div class="user-box1">
 <label class="point">J'accepte les </label> <label><a href="#" id="condition">conditions générales de la Newsletter :</a></label> <!-- AJOUTER VRAI lien-->
@@ -54,6 +54,7 @@
 	<span></span>
 	<span></span>
 	Valider l'inscription</a>
+    <!--<input type="submit" id="submit" value="Valider l'inscription" />-->
 </div>
 </fieldset>
 </div>
