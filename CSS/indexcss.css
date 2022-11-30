@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway:wght@200&display=swap');
 html{
-    height: 300vh;
+    height: 300em;
 }
 
 #background-video{
-    position: absolute;
+  position: absolute;
+  order: 1;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -13,27 +14,31 @@ html{
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
 #background-video2{
-  position: absolute;
-  top : 800px;
-  right: 0;
-  bottom: 0;
+  order: 2;
   min-width: 100%;
   min-height: 100%;
+  right: 0;
   z-index: -100;
   box-shadow: 0px -5px 20px rgb(0, 0, 0);
+}
+.vids{
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* attention gap texte + back*/
 }
 body{
     background: linear-gradient(#141e30, #243b55);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #logo{
-    height: 150px;
+    height: auto;
     width: 150px;
     margin: 10px;
 }
 nav{
+  order: 0;
     z-index: 1;
     background: linear-gradient(#141e30, #243b55);
     display: flex;
@@ -42,7 +47,8 @@ nav{
     margin-right: 50px;
     border-radius: 30px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 p {
 	text-align: center;
@@ -55,7 +61,8 @@ nav ul {
 	list-style: none;
 	position: relative;
     display: flex;
-    gap: 50px;
+    gap: 39px;
+    flex-wrap: wrap;
 	}
 	
 nav ul li {
@@ -80,7 +87,7 @@ nav a {
     height: 3px;
     background-color: #444;
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 0%;
     transition: all ease-in-out 250ms;
   }
@@ -128,15 +135,18 @@ nav ul ul li {
   
 h1 {
     text-align: center;
-    width: 50%;
+    width: 15em;
     color: #fff;
     font-family: 'Kanit', sans-serif;
     overflow: hidden; 
     border-right: 0.15em solid orange; 
-    white-space: nowrap; 
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap; 
     margin: 0 AUTO;
-    margin-top: 50px; 
-    letter-spacing: .15em; 
+    margin-top:  0px; 
+    letter-spacing: .15em;
+    font-size: auto; 
     animation: 
       typing 3.5s steps(30, end),
       blink-caret 0.5s step-end infinite;
@@ -146,7 +156,7 @@ h1 {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 50% }
+    to { width: 15em }
   }
 
 
@@ -156,29 +166,4 @@ h1 {
   }
   
   
-  .waviy {
-    position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    top: 200px;
-  }
-  .waviy span {
-    position: relative;
-    display: inline-block;
-    font-size: 40px;
-    color: #fff;
-    text-transform: uppercase;   
-    animation: waviy 2.5s infinite;
-    animation-delay: calc(.1s * var(--i))
-  }
-  @keyframes waviy {
-    0%,40%,100% {
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-20px)
-    }
-  }
-	
+  
