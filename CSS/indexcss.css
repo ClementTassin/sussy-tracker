@@ -40,6 +40,11 @@ body{
     width: 70px;
     margin: 10px;
 }
+#logo2{
+    height: auto;
+    width: 200px;
+    margin: 10px;
+}
 .stick{
   height: 200em;
 }
