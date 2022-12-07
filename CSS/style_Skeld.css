@@ -11,6 +11,9 @@ html{
     z-index: -100;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
+
+  
+  
 #Map{
     width: 75%;
     height: 75%; 
@@ -22,14 +25,40 @@ html{
     flex-direction: column;
     align-items: center;
 }
+#scroll{
+    position: relative;
+    bottom:90px;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
 #titre{
+    position: relative;
+    top: 40px;
     text-align: center;
     font-family: 'Nerko One', cursive;
     font-size: 400%;
+
+}
+.texte{
+    position: relative;
+    top:60px;
+    color: white;
+}
+#explain{
+    position: relative;
+    color: white;
+    bottom:100px;
+    font-size:150%
+}
+#sous-titre{
+    text-align: center;
+    font-size: 150%;
 }
 html{
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 78%, rgba(157,157,157,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
+    height: 400em;
 z-index: -100000;
 
 }
