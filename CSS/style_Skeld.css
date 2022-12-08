@@ -27,7 +27,7 @@ html{
 }
 #scroll{
     position: relative;
-    bottom:90px;
+    bottom:-20px;
     color: white;
     text-align: center;
     font-size: 200%;
@@ -42,23 +42,41 @@ html{
 }
 .texte{
     position: relative;
-    top:60px;
+    top:200px;
     color: white;
 }
-#explain{
-    position: relative;
-    color: white;
-    bottom:100px;
-    font-size:150%
+#explication{
+    font-size: 120%;
 }
 #sous-titre{
+    position: relative;
     text-align: center;
+}
+#nom_salle{
+    position: relative;
+    top:400px;
+    font-weight: 1000;
     font-size: 150%;
+    color: black;
+}
+.cafet{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    margin:200px;
+}
+#Cafet_H{
+    width:55.5%;
+
+
+}
+#Cafet_B{
+    width:50%;
+   
 }
 html{
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
     height: 400em;
 z-index: -100000;
-
 }
