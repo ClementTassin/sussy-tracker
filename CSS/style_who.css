@@ -101,15 +101,15 @@ nav ul ul li {
 main{
     color: white;
 }
-main div {
-    position: relative;
-    height: 350px;
-    width: 250px;
-    padding: 5px;
-    border: 2px solid gray;
-    margin: 0;
-    z-index: 0
-}
+    main div {
+        position: relative;
+        height: 150px;
+        width: 250px;
+        padding: 5px;
+        border: 2px solid #E57A44 ;
+        margin: 0;
+        z-index: 0
+    }
 #Clement{
     border-radius: 20px;
     margin-left: 50px;
@@ -140,7 +140,6 @@ main div {
 }
 #bibi {
     left: 40%;
-    height: 360px;
     border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -164,4 +163,197 @@ main h1{
     margin: 0;
     padding: 0;
     z-index: 1;
+}
+main div h1 {
+    position: relative;
+    left: 0;
+    top: 25px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #fff;
+    background-color: #2f2f2f;
+    border-top: 1px solid #e5e5e5;
+}
+
+    .footer > * {
+        flex: 1 100%;
+    }
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav__title {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer address {
+    font-style: normal;
+    color: #999;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    max-width: max-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    color: #ffffff;
+    line-height: -1;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+    .footer__nav > * {
+        flex: 1 50%;
+        margin-right: 1.25em;
+    }
+
+.nav__ul a {
+    color: #999;
+}
+
+.nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+}
+
+.legal__links {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
+
+.footer li a:hover {
+    text-decoration: underline;
+}
+main div p{
+    position: relative;
+    top: 40px;
+    opacity : 0;
+}
+main div:hover p {
+    animation-name: apparition;
+    animation-duration: 1s;
+    animation-fill-mode :forwards;
+}
+
+#Clement:hover {
+    animation-name: Animation1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#Victor:hover {
+    animation-name: Animation1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#Irshad:hover {
+    animation-name: Animation1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#bibi:hover {
+    animation-name: Animation1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes Animation1 {
+    from {
+        height: 150px ;
+        display:none;
+    }
+
+    to {
+       height: 250px;
+       display: block;
+    }
+}
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
