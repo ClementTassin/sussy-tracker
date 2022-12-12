@@ -13,24 +13,22 @@ html{
     z-index: -100;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
-#background-video2{
-  position: absolute;
-  top: 830px;
-  right: 0;
-  order: 2;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100;
-  box-shadow: 0px -5px 20px rgb(0, 0, 0);
+main {
+  display: flex;
+  flex-direction: column;
+  border: red 2px solid;
+  gap: 200px;
 }
+
 .vids{
     display: flex;
     flex-direction: column;
     gap: 200px; /* attention gap texte + back*/
     align-items: stretch;
+
 }
 body{
-    background: linear-gradient(#141e30, #243b55);
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -170,9 +168,9 @@ h1 {
     
   }
 
-.stats  h1{
+.stats{
   position: relative;
-  top:450px;
+  top:260px;
   LEFT: -400px;
   font-size: 40px;
     width: 10em;
@@ -191,10 +189,10 @@ h1 {
     
 
 }
-.stats  .stats2  h1{
+.stats2{
   position: relative;
  left:400px;
-top: 392px; 
+top: 0; 
 font-size: 40px; 
       width: 10em;
     color: rgb(255, 255, 255);
@@ -235,13 +233,14 @@ font-size: 40px;
 
   .prez{
     display: grid;
-    grid-template-areas: "txt img"
-                        "img txt";
+    grid-template-areas: "img txt";
+    background: linear-gradient(#141e30, #243b55);
+
   }
   #mira{
     grid-area: img;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
   }
   #txtmira{
     grid-area: txt;
