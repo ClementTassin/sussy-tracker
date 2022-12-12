@@ -44,6 +44,7 @@ html{
     position: relative;
     top:200px;
     color: white;
+    margin-bottom: 280px;
 }
 #explication{
     font-size: 120%;
@@ -53,30 +54,134 @@ html{
     text-align: center;
 }
 #nom_salle{
-    position: relative;
-    top:400px;
     font-weight: 1000;
     font-size: 150%;
     color: black;
+    text-align: center;
 }
 .cafet{
-    display:flex;
-    flex-direction: row;
-    gap:10px;
+    display:grid;
+    grid-template-areas: "img img2"
+                        " txt txt2";
+    gap:50px;
     margin:200px;
+    margin-bottom: 2px;
+    margin-top: 0px;
 }
 #Cafet_H{
-    width:55.5%;
+    width:111%;
+    grid-area: img;
 
 
 }
 #Cafet_B{
-    width:50%;
+    
+    grid-area: img2;
+    width:100%;
+    
    
 }
+#Caf_Haut{
+    position: relative;
+    bottom: 90%;
+    grid-area: txt;
+    text-align: center;
+}
+#Caf_Bas{
+    position: relative;
+    bottom: 90%;
+    grid-area: txt2;
+    text-align: center;
+}
+.wire{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#wire_i{
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#wire_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.dl{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#dl_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#dl_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.emergency{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#Emerg_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#Emerg_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+#Weapons{
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+.weap{
+    margin-bottom: 70px;
+}
+.astero{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#astero_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#astero_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+#O2{
+    position: relative;
+    left: 30%;
+    width: 40%;
+    
+}
+#sus{
+    color: red;
+    text-align: center;
+    font-size: 130%;    
+}
+
 html{
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
     height: 400em;
-z-index: -100000;
+    z-index: -100000;
 }
+
