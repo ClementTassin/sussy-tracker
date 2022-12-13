@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 html {
-height:100%;
 width: 100%;
 }
-body {
-    background-color: blue;
-    min-height: 100vh;
-    width: 100%;
-}
+
 #logo {
     height: auto;
     width: 150px;
@@ -15,10 +10,6 @@ body {
 }
 body {
     background: linear-gradient(#141e30, #243b55);
-    width:100%;
-     height:100%;
-
-    
 }
 nav {
     border: rgb(229, 229, 255) 3px solid;
@@ -202,7 +193,7 @@ main img {
     z-index: 1;
 }
 main h1 {
-    position: relative;
+    display:flex;
     left: 50%;
     bottom: -20px;
     font-size: 20px;
@@ -216,7 +207,7 @@ main h1 + p{
 }
 #Qui{
     font-size: 25px;
-    
+    display: flex;
 }
 main div h1 {
     position: relative;
@@ -452,19 +443,23 @@ main #bibi:hover p {
         z-index:1;
     }
 }
-.titre {
-    position: relative;
-    left: 50%;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-    animation:none;
-}
 main h1{
     font-weight: bold;
 }
+#Qui{
+    display:flex;
+    justify-content: center;
+    text-decoration: underline;
+}
 iframe {
-    border: 1px solid black;
+    border: 1px solid;
     width: 100%;
+}
+#descbout {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: dashed 3px #823f3f;
+    border-radius: 20px;
 }
