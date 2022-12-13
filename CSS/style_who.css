@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway+Dots&family=Raleway:wght@200&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Teko&family=Ubuntu:wght@500&display=swap');
 html {
 width: 100%;
 }
@@ -22,14 +22,12 @@ nav {
     margin-right: 50px;
     border-radius: 30px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     top: 43px;
 }
 
-p {
-    text-align: center;
-}
+
 
 
 nav ul {
@@ -109,28 +107,18 @@ nav ul ul li {
     display: list-item;
     position: relative;
 }
-
-#premiertext {
+p{
     text-align: center;
-    width: 15em;
-    font-size: 70px;
-    color: #fff;
-    font-family: 'Kanit', sans-serif;
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    white-space: nowrap;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 AUTO;
-    margin-top: 0px;
-    letter-spacing: .15em;
-    font-size: auto;
-    position: relative;
-    top: 200px;
-    animation: typing1 4s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-main{
+    font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    font-size: 30px;
+    border: 10px red solid;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .conteneur {
@@ -192,23 +180,34 @@ main img {
     padding: 0;
     z-index: 1;
 }
-main h1 {
-    display:flex;
-    left: 50%;
-    bottom: -20px;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
+
 main h1 + p{
     position: relative;
         bottom: -20px;
 }
 #Qui{
-    font-size: 25px;
-    display: flex;
+    font-family: 'Kanit', sans-serif, Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    align-self: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    background-image: url(https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gifv);
+    position: relative;
+    background-position: 500px 500px;
+  -webkit-text-fill-color: transparent;
+  animation: bouge 10s infinite linear alternate;
 }
+@keyframes bouge {
+    from{
+        background-position: 500px 500px;
+    }
+    to{
+        background-position: 100px 100px;
+    }
+}
+
 main div h1 {
     position: relative;
     left: 0;
@@ -221,7 +220,7 @@ main div h1 {
 .footer {
     display: flex;
     position: absolute;
-    left: 0;
+    left: 0; 
     width: auto;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
@@ -443,14 +442,8 @@ main #bibi:hover p {
         z-index:1;
     }
 }
-main h1{
-    font-weight: bold;
-}
-#Qui{
-    display:flex;
-    justify-content: center;
-    text-decoration: underline;
-}
+
+
 iframe {
     border: 1px solid;
     width: 100%;
