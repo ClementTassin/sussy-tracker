@@ -270,6 +270,7 @@ h2{
     padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 30px;
+    margin-left: 8%;
     border-radius: 25%;
   }
   #txtmira{
@@ -587,5 +588,5 @@ content: '';
 body{
   display: flex;
   flex-direction: column;
-  gap: 1000px;
+  gap: 1300px;
 }
