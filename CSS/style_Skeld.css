@@ -122,6 +122,7 @@ html{
     margin-right: 100px;
 }
 #dl_t{
+ 
     text-align: center;
     margin-top: 100px;
     font-size: 130%;
@@ -170,17 +171,170 @@ html{
     position: relative;
     left: 30%;
     width: 40%;
+    margin-bottom: 100px;
     
+}
+.feuilles{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#feuilles_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#feuilles_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.poub{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#poub_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#poub_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.bidule{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#bidule_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#bidule_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.O2_emerg{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#O2_emerg_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#O2_emerg_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 120%;
+}
+.navigation{
+    margin-bottom: 70px;
+}
+#Nav{
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+.navire{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#navire_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#navire_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.croix{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#croix_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#croix_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.shields{
+    margin-bottom: 70px;
+}
+#bouclier{
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+.bou{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#bou_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#bou_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
 }
 #sus{
     color: red;
     text-align: center;
     font-size: 130%;    
 }
-
+.comms{
+    margin-bottom: 70px;
+}
+#communication{
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+.comms_emerg{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#comms_emerg_i{
+    border-radius: 5%;
+    width: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#comms_emerg_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
 html{
-    background: rgb(2,0,36);
+    background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
+    background-repeat: no-repeat;
     height: 400em;
     z-index: -100000;
 }
