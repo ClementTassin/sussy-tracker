@@ -329,7 +329,7 @@ html {
 .footer {
   display: flex;
   position: absolute;
-  bottom: -500%;
+  bottom: -800%;
   left: 0;
   width: 100%;
   flex-flow: row wrap;
@@ -362,8 +362,9 @@ html {
 }
 
 .nav__title {
-  font-weight: 400;
+  margin-top: 1.3em;
   font-size: 15px;
+  font-weight: 400;
 }
 
 .footer address {

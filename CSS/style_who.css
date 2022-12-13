@@ -231,7 +231,7 @@ main div h1 {
     display: flex;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: auto;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #fff;
@@ -254,7 +254,16 @@ main div h1 {
     text-transform: lowercase;
     font-size: 1.5rem;
 }
-
+#logo{
+    height: auto;
+    width: 70px;
+    margin: 10px;
+}
+#logo2{
+    height: auto;
+    width: 200px;
+    margin: 10px;
+}
 .footer__addr h2 {
     margin-top: 1.3em;
     font-size: 15px;
