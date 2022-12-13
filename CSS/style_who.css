@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway+Dots&family=Raleway:wght@200&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Teko&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway+Dots&family=Raleway:wght@200&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Teko&family=Ubuntu:wght@500&display=swap');
 html {
 width: 100%;
 }
@@ -108,11 +108,17 @@ nav ul ul li {
     position: relative;
 }
 p{
+    margin: auto;
+    width: 90%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-size: 30px;
-    border: 10px red solid;
 }
 
 main{
@@ -124,12 +130,13 @@ main{
 .conteneur {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
 }
 .desc {
-    height: 150px;
-    width: 250px;
+    width: 35%;
     padding: 5px;
-    border: 2px solid #E57A44;
+    border-color: #FFF;
     margin: 0;
 }
 #Clement{
@@ -140,10 +147,12 @@ main{
     margin-bottom: 50px;
     padding: 20px;
     text-align: center;
-    left: 50%
+    background: rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    color:rgb(255, 255, 255);   
 }
 #Victor {
-    left: 25%;
     border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -151,9 +160,12 @@ main{
     margin-bottom: 50px;
     padding: 20px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    color:rgb(255, 255, 255);
 }
 #Irshad {
-    left: 35%;
     border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -161,9 +173,12 @@ main{
     margin-bottom: 50px;
     padding: 20px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    color:rgb(255, 255, 255);
 }
 #bibi {
-    left: 20%;
     border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -171,6 +186,10 @@ main{
     margin-bottom: 50px;
     padding: 20px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    color:rgb(255, 255, 255);
 }
 main img {
     border-radius: 50%;
@@ -182,8 +201,7 @@ main img {
 }
 
 main h1 + p{
-    position: relative;
-        bottom: -20px;
+
 }
 #Qui{
     font-family: 'Kanit', sans-serif, Helvetica, Arial, sans-serif;
@@ -216,6 +234,8 @@ main div h1 {
     margin: 0;
     padding: 0;
     z-index: 1;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 5px;
 }
 .footer {
     display: flex;
@@ -359,89 +379,16 @@ main div h1 {
 .footer li a:hover {
     text-decoration: underline;
 }
+
 main div p {
     position: relative;
     top: 40px;
-    opacity: 0;
-    z-index: 0;
 }
-main #Clement:hover p {
-    animation-name: apparition;
-    animation-duration: 1.1s;
-    animation-delay: 0.8s;
-    animation-fill-mode :forwards;
+.description{
+    background: none;
+    box-shadow: none;
 }
-main #Victor:hover p {
-    animation-name: apparition;
-    animation-duration: 1.1s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-}
-main #Irshad:hover p {
-    animation-name: apparition;
-    animation-duration: 1.1s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-}
-main #bibi:hover p {
-    animation-name: apparition;
-    animation-duration: 1.1s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-}
-#Clement:hover {
-    animation-name: Animation1;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-#Victor:hover {
-    animation-name: Animation1;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-#Irshad:hover {
-    animation-name: Animation2;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-#bibi:hover {
-    animation-name: Animation1;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes Animation1 {
-    from {
-        height: 150px ;
-        display:none;
-    }
 
-    to {
-       height: 300px;
-       display: block;
-    }
-}
-@keyframes Animation2 {
-    from {
-        height: 150px;
-        display: none;
-    }
-
-    to {
-        height: 340px;
-        display: block;
-    }
-}
-@keyframes apparition {
-    from {
-        opacity: 0;
-        z-index:0;
-    }
-
-    to {
-        opacity: 1;
-        z-index:1;
-    }
-}
 
 
 iframe {
