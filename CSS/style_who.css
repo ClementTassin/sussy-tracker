@@ -144,6 +144,7 @@ main{
 
 .conteneur {
     display: flex;
+    flex-wrap: wrap;
 }
 .desc {
     height: 150px;
