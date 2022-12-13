@@ -36,8 +36,14 @@ main {
     width: 200px;
     margin: 10px;
 }
+#logo3{
+  height: auto;
+  width: 70px;
+  margin: 10px;
+  align-self: flex-start;
+}
 .stick{
-  height: 200em;
+  height: 240em;
 }
 nav{
   border: rgb(229, 229, 255) 3px solid;
@@ -50,11 +56,12 @@ nav{
     margin-right: 50px;
     border-radius: 30px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     position: sticky;
     top: 43px;
 }
+
 p {
 	text-align: center;
 }
@@ -260,24 +267,25 @@ h2{
     background-image: url('../Images/bckg3.jpg');
     background-size: 100%;
     box-shadow: inset 0px 10px 21px  rgb(0, 0, 0), inset 0px -10px 21px rgb(0, 0, 0);
-
+  }
+  .pres{
+    display: flex;
+    flex-direction: row;                                                            
   }
   #mira{
     display: grid;
     grid-area: img;
-    width: 90%;
-    height: 90%;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    margin-left: 8%;
-    border-radius: 25%;
+    width: 450px;
+    height: 450px;
+    margin: 5% 20%   ;
   }
   #txtmira{
     display: grid;
     grid-area: txt;
     color: white;
     padding-top: 3%;
+    font-size: 70px;
+    margin-top: 5%;
   }
   .prez2{
     display: grid;
@@ -586,5 +594,5 @@ content: '';
 body{
   display: flex;
   flex-direction: column;
-  gap: 1300px;
+  gap: 600px;
 }
