@@ -292,18 +292,16 @@ h2{
     grid-area: img;
     width: 550px;
     height: 550px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding: 7%;
     border-radius: 16%;
-    margin-left: 280px;
+    margin-left: -10%;
   }
   #txtquest {
     display: grid;
     grid-area: txt;
     color: white;
-    padding-top: 20%;
-    margin-left: -20%;
+    padding-top: 15%;
+    margin-left: -40%;
     color: black;
   }
 #comu{
