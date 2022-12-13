@@ -23,7 +23,7 @@ td,th {
 
 
 html {
-    height: 240vh;
+    height: 210vh;
   }
   fieldset{
     border: none;
@@ -40,22 +40,7 @@ html {
     font-family: sans-serif;
     background: linear-gradient(#141e30, #243b55);
   }
-  .Amog{
-    position: relative;
-    height:50px;
-  }
-  #Amog_Bleu{
-    position:relative;
-    left:50%;
-  }
-  #Amog_Noir{
-    position: relative;
-    left:100%;
-  }
-  #Amog_Blanc{
-    position: relative;
-    left:100%;
-  }
+  
   .reason{
     margin: auto;
     display: flex;
@@ -328,8 +313,6 @@ html {
 }
 .footer {
   display: flex;
-  position: absolute;
-  bottom: -800%;
   left: 0;
   width: 100%;
   flex-flow: row wrap;
