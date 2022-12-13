@@ -1,0 +1,44 @@
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+
+/*CSS pour le tableau des pets*/
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #6495ed;
+}
+caption{
+
+    font-weight: bold;
+    margin : 25px;
+    font-size:35px;
+}
+.Alexis_Doggo{
+	text-decoration:none;
+	color:black;
+}
+
+.Bleu{
+	width:10px
+	height:10px;
+
+}
+.Impostor{
+	animation-name: SUS;
+	animation-duration: 1s;
+}
+
+.Impostor:hover
+{ background: url('Images/Among_Couleurs_Among_Rouge.png') no-repeat; }
