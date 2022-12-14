@@ -1,52 +1,159 @@
 <!doctype html>
 <html lang="fr">
 
-	<head>
-	<meta charset="utf-8">
-	<title>Commentaires</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/style.css">
+<head>
+    <meta charset="utf-8">
+    <title>Commentaires</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style_com.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/sussy-tracker-logo.png">
     <video autoplay muted loop id="background-video">
-		<source src="Images/Background.mp4" type="video/mp4" />
-	</video>
-    </head>
-    <header>
-        <img src="images/Among_Couleurs/Among_Blanc.webp" alt ="Blanc" class="Amog"/>
-        <img src="images/Among_Couleurs/Among_Bleu.png" alt ="Bleu" class="Amog" id="Amog_Bleu"/>
-        <img src="images/Among_Couleurs/Among_Noir.webp" alt ="Noir" class="Amog" id="Amog_Noir"/>
-
-    </header>
+        <source src="Images/Background.mp4" type="video/mp4" />
+    </video>
+</head>
 
     <body>
+       
+        <nav>
+
+            <img src="Images/sussy-tracker-logo.png" id="logo3">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Maps</a>
+                    <!-- First Tier Drop Down -->
+                    <ul>
+                        <li><a href="Mira_HQ.html">Mira HQ</a></li>
+                        <li><a href="Polus.html">Polus</a></li>
+                        <li><a href="The_Skeld.html">The Skeld</a></li>
+                    </ul>
+                </li>
+
+
+                </li>
+                <li><a href="tableau_prix_copier.html">DLC</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="commentaire.html">Contact</a></li>
+                <li><a href="who.html">About</a></li>
+            </ul>
+
+
+        </nav>
         <form method="POST" action="merci.html" target=blank>
-        <fieldset id="relative" >
-            <legend class="texte_noir">Votre avis nous interesse !</legend>
-            <label for="description" class="texte_noir">Message :</label > 
-            <br>
-            <textarea rows="10" cols="50" name="description" id="description" maxlength="200"></textarea >
-            <br><br>
-            <label for="comment" class="texte_noir">Comment avez vous connu Sussy Tracker?</label>
-            <select id="comment" name="comment">
-                <option value="0">-Veuillez Choisir-</option>
-                <option value="fam">Grace a des amis</option>
-                <option value="res">Grace aux reseaux sociaux (Serveur Discord)</option>
-                <option value="etu">Grace au chat in-game</option>
-            </select>
-            <br>	
-            <input type="submit" name="Envoyer" id="soumission" value="Envoyer" class="Boite">
-            <input type="reset" class="Boite">
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-        </fieldset>
-    </form>
-    <div id="scroll_to_top">
-        <a href="#top"><img src="Images/scrolltop.png" alt="Retourner en haut" /></a>
-    </div>
+            <fieldset id="relative">
+                <legend class="texte_noir"> Informations personnelles</legend>
+                <label for="Nom" class="texte_noir">Nom ou Pseudo:</label>
+                <br>
+                <textarea rows="1" cols="30" name="Nom" id="Nom" maxlength="200"></textarea>
+                <br><br>
+                <label for="Prénom" class="texte_noir">Prénom (si nom):</label>
+                <br>
+                <textarea rows="1" cols="30" name="Prénom" id="Prénom" maxlength="200"></textarea>
+                <br><br>
+                <legend class="texte_noir">Donnez-nous votre avis !</legend>
+                <label for="description" class="texte_noir">Message :</label>
+                <br>
+                <textarea rows="10" cols="50" name="description" id="description" maxlength="200"></textarea>
+                <br><br>
+                <label for="comment" class="texte_noir">Comment avez-vous connu Sussy Tracker?</label>
+                <select id="comment" name="comment">
+                    <option value="0">-Veuillez Choisir-</option>
+                    <option value="fam">Grace a des amis</option>
+                    <option value="res">Grace aux reseaux sociaux (Serveur Discord)</option>
+                    <option value="etu">Grace au chat in-game</option>
+                    <option value="aut">Autre</option>
+                </select>
+                <br>
+                <label for="Quali" class="texte_noir">Que pensez-vous de notre site ?</label>
+                <select id="Quali" name="Quali">
+                    <option value="0">-Veuillez Choisir-</option>
+                    <option value="fam">Déçu</option>
+                    <option value="res">On pourrait faire mieux</option>
+                    <option value="etu">Bien</option>
+                    <option value="aut">Top !</option>
+                </select>
+                <input type="submit" name="Envoyer" id="soumission" value="Envoyer" class="Boite">
+                <input type="reset" class="Boite">
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </fieldset>
+        </form>
+        <div id="scroll_to_top">
+            <a href="#top"><img src="Images/scrolltop.png" alt="Retourner en haut" /></a>
+        </div>
+        <div class="fooot">
+            <footer class="footer">
+                <div class="footer__addr">
+                    <img src="Images/sussy-tracker-logo.png" id="logo">
+                    <img src="Images/Groupesus.png" id="logo2">
+                </div>
+
+                <ul class="footer__nav">
+                    <li class="nav__item">
+                        <div class="nav__title">Media</div>
+
+                        <ul class="nav__ul">
+                            <li>
+                                <a href="commentaire.html">Avis</a>
+                            </li>
+
+                            <li>
+                                <a href="who.html">Qui sommes-nous ?</a>
+                            </li>
+
+                            <li>
+                                <a href="newsletter.html">Newsletter</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item nav__item--extra">
+                        <div class="nav__title">Contact</div>
+
+                        <ul class="nav__ul nav__ul--extra">
+                            <li>
+                                <address class="footer__addr">
+                                    4 rue Hoche Lille 59800
+                                </address>
+                            </li>
+                            <li>
+                                <address class="footer__addr">
+                                    +33 83 41 87 73
+
+                                    <a class="footer__btn" href="mailto:clement@clement.tassin.go.yo.fr">Email Us</a>
+                                </address>
+                                <a href="https://www.instagram.com/sussy_tracker/"><img src="Images/Instagram.png" alt="Instagram" width="50" height="50"></a>
+                                <a href="https://twitter.com/SussyTracker"><img src="Images/Twitter.png" alt="Twitter" width="auto" height="50"></a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <div class="nav__title">Legal</div>
+
+                        <ul class="nav__ul">
+
+                            <li>
+                                <a href="Condition générale.html">Condition générales d'utilisation</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    <p>&copy; 2022 Sussy Tracker. All rights reserved.</p>
+
+                    <div class="legal__links">
+                        <span>Made by Sussy-Tracker Team from France</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
-    <foot>
-         <img src="images/Among_Couleurs/Among_Noir.webp" alt ="Noir" class="Amog"/>
-         <img src="images/Among_Couleurs/Among_Bleu.png" alt ="Bleu" class="Amog" id="Amog_Bleu"/>
-         <img src="images/Among_Couleurs/Among_Blanc.webp" alt ="Blanc" class="Amog" id="Amog_Blanc"/>
-    </foot>
+       
 </html>
