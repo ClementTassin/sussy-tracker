@@ -65,3 +65,9 @@ html {
     position: relative;
     text-align: center;
 }
+#nom_salle {
+    font-weight: 1000;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+}
