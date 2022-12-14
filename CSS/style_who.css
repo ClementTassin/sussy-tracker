@@ -200,9 +200,6 @@ main img {
     z-index: 1;
 }
 
-main h1 + p{
-
-}
 #Qui{
     font-family: 'Kanit', sans-serif, Helvetica, Arial, sans-serif;
     font-size: 6rem;
@@ -265,6 +262,11 @@ main div h1 {
     font-size: 1.5rem;
 }
 #logo{
+    height: auto;
+    width: 70px;
+    margin: 10px;
+}
+#logo3{
     height: auto;
     width: 70px;
     margin: 10px;
@@ -342,7 +344,23 @@ main div h1 {
     flex-wrap: wrap;
     color: #999;
 }
+.legal p{
+    display: flex;
+    right: 20%;
+    position: relative;
+    flex-wrap: wrap;
+    color: #999;
+    background: none;
+    box-shadow: none;
+    font-size: 20px;
 
+    margin: NONE;
+    width: auto;
+    padding: none;
+
+    text-align:inherit;
+
+}
 .legal__links {
     display: flex;
     align-items: center;
@@ -392,14 +410,30 @@ main div p {
 
 
 iframe {
-    border: 1px solid;
-    width: 100%;
+    width: 50%;
+    margin-bottom: 10%;
+    border-radius: 20px;
 }
-#descbout {
+.frame{
+
     display: flex;
     justify-content: center;
+}
+#descbout {
+    text-align: center;
     margin: 0;
     padding: 0;
-    border: dashed 3px #823f3f;
-    border-radius: 20px;
+    background:  linear-gradient(90deg, rgba(180,114,166,1) 0%, rgba(158,82,82,1) 100%);
+    -webkit-background-clip: text;
+    font-family: 'Kanit',sans-serif;
+    font-size: 40PX;
+    -webkit-text-fill-color: transparent;
+    animation: color 2s infinite linear alternate;
+}
+@keyframes color {
+    from{
+        text-shadow: 2 0 3px rgba(180,114,166,1); color: #fff;
+    }to{
+        text-shadow: 0 0 3px rgba(158,82,82,1); color: #fff;
+    }
 }

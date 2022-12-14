@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway+Dots&family=Raleway:wght@200&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Teko&family=Ubuntu:wght@500&display=swap');
 
 table { 
     border-collapse: collapse;
@@ -19,7 +18,110 @@ td,th {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+#logo3{
+  height: auto;
+  width: 70px;
+  margin: 10px;
+  align-self: flex-start;
+}
+nav{
+  border: rgb(229, 229, 255) 3px solid;
+  order: 0;
+    z-index: 1;
+    background: linear-gradient(#141e30, #243b55);
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 43px;
+}
 
+p {
+	text-align: center;
+}
+
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+    display: flex;
+    gap: 39px;
+    flex-wrap: wrap;
+	}
+	
+nav ul li {
+	display:inline-block;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #444;
+    position: absolute;
+    top: 10%;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 85%;
+    background-color:#004ea7;
+  }
+
+
+  nav ul ul {
+	display: none;
+	position: absolute; 
+}
+	
+
+nav ul li:hover > ul {
+    animation: pop 0.8s ;
+    animation-fill-mode: forwards;  
+    display:inherit;
+    border-radius: 20px;
+    top : 55px;
+}
+
+@keyframes pop {
+    from{
+        background-color: #141e30;
+        top: 0px;
+        opacity: 0%;
+    }
+    to{
+        background-color:#7fafe6;
+        top : -60px;
+        opacity: 100%;
+        
+    }
+}
+
+nav ul ul li {
+	width: 120px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
 
 
 html {
@@ -313,8 +415,6 @@ html {
 }
 .footer {
   display: flex;
-  left: 0;
-  width: 100%;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
   color: #fff;
@@ -364,7 +464,7 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 100px;
   color: #ffffff;
-  line-height: 0;
+  line-height: 13;
   margin: 0.6em 0;
   font-size: 1rem;
   padding: 0 1.3em;

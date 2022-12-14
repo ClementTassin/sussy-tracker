@@ -594,5 +594,5 @@ content: '';
 body{
   display: flex;
   flex-direction: column;
-  gap: 600px;
+  gap: 1000px;
 }

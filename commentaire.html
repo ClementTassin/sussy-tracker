@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Commentaires</title>
+    <title>Comentaires</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style_com.css">
@@ -43,29 +43,34 @@
         </nav>
         <form method="POST" action="merci.html" target=blank>
             <fieldset id="relative">
+                <div class="positionement">
+                <div class="texte">
                 <legend class="texte_noir"> Informations personnelles</legend>
                 <label for="Nom" class="texte_noir">Nom ou Pseudo:</label>
-                <br>
+                
                 <textarea rows="1" cols="30" name="Nom" id="Nom" maxlength="200"></textarea>
-                <br><br>
+                
                 <label for="Prénom" class="texte_noir">Prénom (si nom):</label>
-                <br>
+                
                 <textarea rows="1" cols="30" name="Prénom" id="Prénom" maxlength="200"></textarea>
-                <br><br>
+                
                 <legend class="texte_noir">Donnez-nous votre avis !</legend>
                 <label for="description" class="texte_noir">Message :</label>
-                <br>
-                <textarea rows="10" cols="50" name="description" id="description" maxlength="200"></textarea>
-                <br><br>
+                
+                <textarea rows="10" cols="50" name="description" id="description" maxlength="600"></textarea>
+               
                 <label for="comment" class="texte_noir">Comment avez-vous connu Sussy Tracker?</label>
+                <div class="test">
+                <div class="centre">
                 <select id="comment" name="comment">
                     <option value="0">-Veuillez Choisir-</option>
                     <option value="fam">Grace a des amis</option>
-                    <option value="res">Grace aux reseaux sociaux (Serveur Discord)</option>
+                    <option value="res">Grace aux reseaux sociaux</option>
                     <option value="etu">Grace au chat in-game</option>
                     <option value="aut">Autre</option>
+                
                 </select>
-                <br>
+                
                 <label for="Quali" class="texte_noir">Que pensez-vous de notre site ?</label>
                 <select id="Quali" name="Quali">
                     <option value="0">-Veuillez Choisir-</option>
@@ -76,7 +81,10 @@
                 </select>
                 <input type="submit" name="Envoyer" id="soumission" value="Envoyer" class="Boite">
                 <input type="reset" class="Boite">
-                <br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                </div>
+                    </div>
+                    </div>
             </fieldset>
         </form>
         <div id="scroll_to_top">

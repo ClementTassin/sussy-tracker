@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kanit:wght@500&family=Quicksand:wght@600&family=Raleway+Dots&family=Raleway:wght@200&family=Rubik+Mono+One&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 td, th {
     border-style: solid;
 }
 
+textarea{
+    border: #273b53 1px solid;
+    border-radius: 20PX;
+    resize: none;
+    outline: none;
+    width: 30%;
+    align-self: center;
+}
+textarea:focus{
+    background-color: rgba(202, 202, 202, 0.212);
+}
+.test{
+    display: flex;
+    justify-content: center;
+}
+.centre{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+}
 
 nav {
     border: rgb(229, 229, 255) 3px solid;
@@ -120,11 +142,19 @@ nav ul ul li {
     margin: 10px;
     align-self: flex-start;
 }
+select{
+    border-radius: 10px;
+}
+input{
+    border-radius: 10px;
+    border: none;
+}
+
 fieldset {
     border: none;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+}
+#prenom{
+    width: 30PX;
 }
 
 body {
@@ -137,30 +167,15 @@ body {
     background: linear-gradient(#141e30, #243b55);
 }
 
-.reason {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 400px;
-    font-size: 17px;
-    color: #fff;
-}
-.point {
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
 
 .texte_noir {
-    color: rgb(149, 149, 150)
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
 }
 
 .texte_blanc {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
 }
 
 #background-video {
@@ -175,51 +190,23 @@ body {
     position: relative;
 }
 
-#onglets {
-    font: bold 11px Batang, arial, serif;
-    list-style-type: none;
-    padding-bottom: 24px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
-    border-bottom: 1px solid #9EA0A1;
-    margin-left: -100px;
-    position: absolute;
-    border: 1px solid transparent;
-    padding: 0;
-    font: bold 11px Batang, arial, serif;
-    list-style-type: none;
-    left: 50%;
-    margin-top: 0;
-    width: 430px;
+.texte{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(36, 45, 74, 1);
+    text-align: center;
+    background: linear-gradient(#141e30, #243b55);
+    border-radius: 10%;
+    gap: 5PX;
+}
+.positionement{
+    display: flex;
+    justify-content: center;
 }
 
-    #onglets li {
-        float: left;
-        height: 21px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
-        background-color: #F4F9FD;
-        margin: 2px 2px 0 2px !important; /* Pour les navigateurs autre que IE */
-        margin: 1px 2px 0 2px; /* Pour IE  */
-        border: 1px solid #9EA0A1;
-    }
-
-    #onglets a {
-        display: block;
-        color: #666;
-        text-decoration: none;
-        padding: 4px;
-    }
-
-        #onglets a:hover {
-            background: #fff;
-        }
-
-        #onglets a.active {
-            border-bottom: 1px solid #fff;
-            background-color: #fff;
-        }
-
-#menu {
-    border-bottom: 1px solid #9EA0A1;
-    padding-bottom: 25px;
-}
 
 #scroll_to_top {
     position: fixed;
@@ -236,6 +223,7 @@ body {
 #description {
     background-color: #141e30;
     color:white;
+    width: auto;
 }
 .footer {
     display: flex;
@@ -279,7 +267,7 @@ body {
 
 .footer address {
     font-style: normal;
-    color: #999;
+    color: rgb(153, 153, 153);
 }
 
 .footer__btn {
