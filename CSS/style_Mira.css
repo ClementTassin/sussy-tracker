@@ -1,136 +1,421 @@
-
-table {
-    border-collapse: collapse;
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+html{
+    background-color: white;
 }
-
-td, th {
-    border-style: solid;
-}
-
-
-html {
-    height: 200vh;
-}
-
-fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
-}
-
-.Amog {
-    position: relative;
-    height: 50px;
-}
-
-#Amog_Bleu {
-    position: relative;
-    left: 50%;
-}
-
-#Amog_Noir {
-    position: relative;
-    left: 100%;
-}
-
-#Amog_Blanc {
-    position: relative;
-    left: 100%;
-}
-
-#background-video {
-    position: fixed;
+#background-video{
+    position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%;
+    min-width: 100%;    
     min-height: 100%;
-    z-index: 0;
+    z-index: -100;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
 
-#relative {
+  
+  
+#Map{
+    width: 75%;
+    height: 75%; 
+}
+.clement{
+    display:flex;
+    height: 100%;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+}
+#scroll{
     position: relative;
-    z-index: 1;
+    bottom:-20px;
+    color: white;
+    text-align: center;
+    font-size: 200%;
 }
-/*display-box{
-    background-color: red;
-    width: 17px;
-    height: 12px;
-    z-index: 2;
+#titre{
     position: relative;
-    opacity: 50%;
+    top: 40px;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+    font-size: 400%;
+
 }
-boite de la vent au launchpad
-.boite0{
-    bottom: 275px;
-    left: 208px;
+.texte{
+    position: relative;
+    top:200px;
+    color: white;
+    margin-bottom: 280px;
 }
-boite de la ventlocker room
-.boite1 {
-    bottom: 233px;
-    left: 498px;
+#explication{
+    font-size: 120%;
 }
-boite de la vent au r�acteur
-.boite2 {
-    bottom: 557px;
-    left: 393px;
+#sous-titre{
+    position: relative;
+    text-align: center;
 }
-boite de la vent en d�conta
-.boite3 {
-    bottom: 390px;
-    left: 568px;
+#nom_salle{
+    font-weight: 1000;
+    font-size: 150%;
+    color: black;
+    text-align: center;
 }
-boite de la vent au laboratoire
-.boite4 {
-    bottom:728px;
-    left: 701px;
+.cafet{
+    display:grid;
+    grid-template-areas: "img img2"
+                        " txt txt2";
+    gap:90px;
+    margin:200px;
+    margin-bottom: 2px;
+    margin-top: 0px;
 }
-boite de la vent en office
-.boite5 {
-    bottom:945px;
-    left: 748px;
+#Cafet_H{
+    width:111%;
+    grid-area: img;
+
+
 }
-boite de la vent en greenhouse
-.boite6 {
-    bottom: 1127px;
-    left: 875px;
+#Cafet_B{
+    
+    grid-area: img2;
+    width:100%;
+    
+   
 }
-boite de la vent en admin
-.boite7 {
-    bottom: 948px;
-    left: 1000px;
+#Caf_Haut{
+    position: relative;
+    bottom: 90%;
+    grid-area: txt;
+    text-align: center;
 }
-boite de la vent en Medbay
-.boite8 {
-    bottom: 462px;
-    left: 806px;
+#Caf_Bas{
+    position: relative;
+    bottom: 90%;
+    grid-area: txt2;
+    text-align: center;
 }
-boite de la vent en cafetaria
-.boite9 {
-    bottom: 754px;
-    left: 1042px;
+.wire{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
 }
-boite de la vent en Balcony
-.boiteA {
-    bottom: 543px;
-    left: 1038px;
+#wire_i{
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
 }
-.boiteB {
-    bottom: 275px;
-    left: 208px;
+#wire_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.dl{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#dl_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#dl_t{
+ 
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.emergency{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#Emerg_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#Emerg_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+#Weapons{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.weap{
+    margin-bottom: 70px;
+}
+.astero{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#astero_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#astero_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+#O2{
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 100px;
+    
+}
+.feuilles{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#feuilles_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#feuilles_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.poub{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#poub_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
 }
 
-.vent:hover .boite {
-    z-index: 2;
+#poub_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
 }
-*/
+.bidule{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#bidule_i{
+    border-radius: 5%;
+    width: 200%;
+    height: 200%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#bidule_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.O2_emerg{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#O2_emerg_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#O2_emerg_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 120%;
+}
+.navigation{
+    margin-bottom: 70px;
+}
+#Nav{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.navire{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#navire_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#navire_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.croix{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#croix_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#croix_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.shields{
+    margin-bottom: 70px;
+}
+#bouclier{
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+.bou{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#bou_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#bou_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+#sus{
+    color: red;
+    text-align: center;
+    font-size: 130%;    
+}
+.comms{
+    margin-bottom: 70px;
+}
+#communication{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.comms_emerg{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#comms_emerg_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#comms_emerg_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+.sto{
+    display:grid;
+    grid-template-areas: "img img2"
+                        " txt txt2";
+    gap:50px;
+    margin:200px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+#sto_H{
+    width: 110%;
+    grid-area: img;
+}
+#sto_B{
+    width: 90%;
+    grid-area: img2;
+}
+#sto_Haut{
+    grid-area: txt;
+    text-align: center;
+    position: relative;
+    bottom: 70%;
+}
+#sto_Bas{
+    position: relative;
+    bottom: 70%;
+    grid-area: txt2;
+    text-align: center;
+
+}
+.fuel{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#fuel_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#fuel_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}
+html{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
+    background-repeat: no-repeat;
+    height: 400em;
+    z-index: -100000;
+}
+
+.diagnostic{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#diagnostic_i{
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#diagnostic_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 130%;
+}

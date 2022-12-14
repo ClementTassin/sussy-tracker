@@ -3,52 +3,178 @@
 
 	<head>
 	<meta charset="utf-8">
-	<title>Mira HQ</title>
+	<title>Mira Hq</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="CSS/style_Mira.css">
-  <link rel="stylesheet" href="CSS/style.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="Images/sussy-tracker-logo.png">
     <video autoplay muted loop id="background-video">
-		<source src="Images/Background.mp4" type="video/mp4" />
+		<source src="Images/Background.mp4" type="video/mp4"/>
 	</video>
     </head>
-    <header id="relative">
-        <img src="images/Among_Couleurs/Among_Blanc.webp" alt ="Blanc" class="Amog"/>
-        <img src="images/Among_Couleurs/Among_Bleu.png" alt ="Bleu" class="Amog" id="Amog_Bleu"/>
-        <img src="images/Among_Couleurs/Among_Noir.webp" alt ="Noir" class="Amog" id="Amog_Noir"/>
+    <header>
         <div id="menu">
             <ul id="onglets">
               <li class="active"><a href="Mira_HQ.html"> Mira_HQ </a></li>
               <li><a href="The_Skeld.html"> The_Skeld </a></li>
               <li><a href="Polus.html"> Polus </a></li>
-              <li><a href="Quete_MHQ.html"> Quêtes </a></li>              
+              <li><a href="Quete_Skeld.html"> Quêtes </a></li>
+              
+
             </ul>
           </div>
+
+
     </header>
+
     <body>
-        <img id="relative" src="Images/Mira_Hq/Map2.png" alt="Map Mira HQ">
-        <display-box class="boite0"></display-box>
-        <display-box class="boite1"></display-box>
-        <display-box class="boite2"></display-box>
-        <display-box class="boite3"></display-box>
-        <display-box class="boite4"></display-box>
-        <display-box class="boite5"></display-box>
-        <display-box class="boite6"></display-box>
-        <display-box class="boite7"></display-box>
-        <display-box class="boite8"></display-box>
-        <display-box class="boite9"></display-box>
-        <display-box class="boiteA"></display-box>
-        <display-box class="boiteB"></display-box>
-        <div id="scroll_to_top">
-          <a href="#top"><img src="Images/scrolltop.png" alt="Retourner en haut" /></a>
+
+      <div class="clement">
+        <img src="Images/Mira_Hq/Map2.png" alt ="Map Mira Hq" id = "Map">
+      </div>
+
+    <p id="scroll">Descendez pour découvrir la présentation de la Map!&#9662</p>
+    <div class="texte">
+    <p id="explication">MIRA HQ est la seconde Map d'Among Us. Cette map possède 14 salles, elle est située dans une gigantesque tour, côtoyant les nuages, qui est en fait le siège de la société MIRA, il n'y a donc aucun passage en extérieur. Au début d'une partie, tous les joueurs commencent au même point de spawn le Launchpad. Dans cette pièce on identifie l'arrière du vaisseau qui a permis de transporter l'équipage de The Skeld jusqu'ici. Cette map  dispose d'une table d'admin mais contrairement à The Skeld et Polus elle ne dispose pas d'une salle de caméra. Les Imposteurs contrairement au deux autres map n’ont pas à disposition la fermeture des portes. Mais d’autres sabotages sont à disposition: éteindre l'O2, saboter le réacteur, utiliser le bureau pour éteindre les lumières, et saboter les communications.(voir plus dans les salles ayant un sabotage.)</p>
+    <h1 id="titre">Quêtes !</h1>
+
+    <p id="sous-titre">Ce qui suit est une liste de toutes les quêtes présentes sur Mira Hq, salles par salles.</p>
+   <p id="sous-titre">Vous pouvez aussi accéder à chaque salle en cliquant dessus sur la carte ci-dessus.</p>
+   
+   </div>
+   <p id="nom_salle">Quêtes dans Cafeteria:</p>
+    <div class="cafet">
+    <img src="Images/The_Skeld/Captures Skeld/Map/Cafeteria_Haut.PNG" alt="Cafeteria_Haut" id="Cafet_H">
+    <img src="Images/The_Skeld/Captures Skeld/Map/Cafetaria_Bas.PNG" alt="Cafeteria_Bas" id="Cafet_B">
+    
+    <p id="Caf_Haut">Haut de la Cafeteria</p>
+    <p id="Caf_Bas">Bas de la Cafeteria</p>
+    </div>
+    
+    <div class="wire">
+      <img src="Images/Mira_Hq/Quêtes/Buy_Beverage.webp" alt="Boissons" id="wire_i">
+      <p id="wire_t"><strong>Le Distributeur</strong><br>Dans cette quête, vous allez devoir cliquez sur le distributeur automatique au fond de la salle. Il y aura un dessin griffonné de la boisson à acheter; trouvez-le et entrez le bon code.</p>
+    </div>
+    <div class="poub">
+      <img src="Images/The_Skeld/Captures Skeld/Quetes/Trash.PNG" alt="Trash" id="poub_i">
+      <p id="poub_t"><strong>Les Poubelles</strong><br>Dans cette quête, vous allez devoir tirer un levier vers le bas le temps que les déchets soient évacués. Effectuez cette quête une première fois puis rendez vous à Storage pour pouvoir évacuer les déchets une seconde fois et enfin terminer cette quête, ce qui fera avancer la barre de complétion des quêtes.</p>
+    </div>
+    <div class="emergency">
+      <img src="Images/The_Skeld/Captures Skeld/Quetes/Emergency.PNG" alt="Bouton" id="Emerg_i">
+    <div class="double">
+      <p id="Emerg_t"><strong>Emergency Meeting</strong><br>Le bouton d'Emergency permet à un joueur d'arrêter la partie pour lancer une discussion et un vote d'élimination comme si un corps avait été trouvé. Utilisez ce bouton lorsque vous avez des suspitions fondées! (par exemple, si vous avez vu un autre joueur utiliser une vent, courez vers le bouton et dénoncez le aux autres!!). Attention! Ce bouton ne peut être utilisé qu'UNE seule fois par personne! 
+      <p id="sus">Lorsque vous êtes imposteur, si vous pensez que quelqu'un a trop de doutes sur vous, faites attention a ce bouton pour éviter qu'un joueur n'appuie dessus pour vous incriminer!</p>
+      </div>
+    </div>
+    <p id="nom_salle">Quêtes dans Launchpad:</p>
+    <div class="weap">
+    <img src="Images/Mira_Hq/Quêtes/Launchpad_room.webp" alt="Launchpad" id="Weapons">
+    </div>
+    <div class="fuel">
+      <img src="Images/The_Skeld/Captures Skeld/Quetes/Gas1.PNG" alt="Fuel" id="fuel_i">
+      <p id="fuel_t">Cette quête s'effectue en 4 parties. D'abord, remplissez votre bidon</p>
+    </div>
+    <div class="bidule">
+        <img src="Images/Mira_Hq/Quêtes/Diver Power.jpg" alt="Courant" id="bidule_i">
+        <p id="bidule_t"><strong>Le Courant</strong><br>Après avoir effectué la première partie de cette quête dans le Réacteur, regardez votre carte pour savoir où est ce que vous allez devoir effectuer cette quête. (Attention, cette quête peut être dans quasiment toutes les salles de la Map). Ici tout ce que vous avez à faire est d'actionner l'interrupteur en surbrillance, de le maintenir enfoncé et de le faire glisser vers le haut.</p>
+    </div>
+    <div class="diagnostic">
+      <img src="Images/Mira_Hq/Quêtes/Run_Diagnostics_end.webp" alt="Courant" id="diagnostic_i">
+      <p id="diagnostic_t"><strong>Le Courant</strong><br>Interagissez simplement avec le panneau et cliquez sur la barre d'espace pour commencer à exécuter les diagnostics. Après 90 secondes, vous devez revenir au panneau et cliquer sur l'anomalie, représentée par le cercle rouge.</p>
+  </div>
+    <p id="nom_salle">Quêtes dans O2:</p>
+    <img src="Images/The_Skeld/Captures Skeld/Map/O2.PNG" alt="O2" id="O2">
+    <div class="feuilles">
+      <img src="Images/The_Skeld/Captures Skeld/Quetes/Feuilles.PNG" alt="feuilles" id="feuilles_i">
+      <p id="feuilles_t"><strong>Les Feuilles</strong><br>Dans cette quête, vous allez devoir nettoyer un espace envahit de feuilles. Pour ce faire, vous devrez attrapper les feuilles 1 par 1 pour les pousser vers l'aspirateur à gauche. Une fois que toutes les feuilles ont disparu, la quête se termine et la barre de complétion des tâches avance !</p>
+    </div>
+    <div class="poub">
+      <img src="Images/The_Skeld/Captures Skeld/Quetes/Trash.PNG" alt="Trash" id="poub_i">
+      <p id="poub_t"><strong>Les Poubelles</strong><br>Dans cette quête, vous allez devoir tirer un levier vers le bas le temps que les déchets soient évacués. Effectuez cette quête une première fois puis rendez vous à Storage pour pouvoir évacuer les déchets une seconde fois et enfin terminer cette quête, ce qui fera avancer la barre de complétion des quêtes.</p>
+    </div>
+    <div class="bidule">
+      <img src="Images/Mira_Hq/Quêtes/Diver Power.jpg" alt="Elec" id="bidule_i">
+      <p id="bidule_t"><strong>Le Courant</strong><br>Après avoir effectué la première partie de cette quête à Electrical, regardez votre carte pour savoir où est ce que vous allez devoir effectuer cette quête. (Attention, cette quête peut être dans quasiment toutes les salles de la Map). Ici vous allez devoir appuyer sur le matériau conducteur au milieu pour le faire tourner et rétablir le courant, terminant la quête et faisant avancer la barre de complétion des tâches.</p>
+    </div>
+    <div class="O2_emerg">
+      <img src="Images/The_Skeld/Captures Skeld/Quetes/O2 emergency.PNG" alt="Emergency O2" id="O2_emerg_i">
+      <div class="double">
+      <p id="O2_emerg_t"><strong>Emergency O2 !</strong><br>Attention les Crewmates ! Les Imposteurs ont saboté le système de ventillation, et si vous ne faites rien pour cela, vous serez morts avant d'avoir dit "SASHA PUSH PAR PITIE" ! Arretez vos quêtes et rendez vous au plus vite à Admin ou à O2 pour réparer ce sabotage. Pour se faire, il faut que 2 joueurs rentre le code écrit à l'écran sur le terminal de Admin et sur le terminal de 02. Une fois les 2 codes rentrés, le sabotage est réparé et vous pouvez continuer à faire vos quêtes.
+      <p id="sus">En tant qu'Imposteur, les sabotages sont existentiels si vous voulez avoir une chance d'exterminer l'équipage. Le sabotage d'O2 est interessant car il permet de split les joueurs en 2 groupes, 1 à Admin et 1 à O2. Il est plus facile pour un imposteur de faire un kill discret sans être reperé si tout le monde se depeche vers un point en étant regroupés. Faites attention, si vous déclenchez ce sabotage et qu'un Crewmate vous vois ne pas essayer de le réparer, il va vous soupsonner. Dans ce cas, faites comme si vous étiez un Crewmate et réparez vite le problème, cela vous donnera encore plus de crédits si vous plaidez innocent pendant un débat.</p>
+      </div>
+    </div>
+    <p id="nom_salle">Quêtes dans Navigation:</p>
+      <div class="Navigation">
+        <img src="Images/The_Skeld/Captures Skeld/Map/Navigation.PNG" alt="Nav" id="Nav">
+      </div>
+      <div class="dl">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Download.PNG" alt="Telechargement" id="dl_i">
+        <p id="dl_t"><strong>Le Télechargement</strong><br>La quête du télechargement est une quête en 2 étapes. Pour la réussir, vous devez cliquer sur le bouton télechargement et attendre que celui ci se termine. Ensuite, vous devez aller à admin pour terminer cette quête et faire avancer a barre de complétion des tâches. </p>
+      </div>
+      <div class="bidule">
+        <img src="Images/Mira_Hq/Quêtes/Diver Power.jpg" alt="Elec" id="bidule_i">
+        <p id="bidule_t"><strong>Le Courant</strong><br>Après avoir effectué la première partie de cette quête à Electrical, regardez votre carte pour savoir où est ce que vous allez devoir effectuer cette quête. (Attention, cette quête peut être dans quasiment toutes les salles de la Map). Ici vous allez devoir appuyer sur le matériau conducteur au milieu pour le faire tourner et rétablir le courant, terminant la quête et faisant avancer la barre de complétion des tâches.</p>
+      </div>
+      <div class="navire">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Vaisseau.PNG" alt="Vaisseau" id="navire_i">
+        <p id="navire_t"><strong>Le Vaisseau</strong><br>Dans cette quête, vous allez devoir emmener un vaisseau virtuel à bon port ! En utilisant votre souris, attrapez le petit vaisseau et faites le suivre la route dessiner pour le faire arriver jusqu'à la fin de son parcours. Lorsqu'il sera arrivé, la quête sera terminée et la barre de complétion des tâcehs avancera. Attention, cette quête est plûtot difficile et peut être très longue à finir si on prend en compte la sensibilité du vaisseau. En effet, soyez extrement précis car ce vaisseau doit suivre exactement la route tracée, un seul petit écart et vous devez recommencer.</p>
+      </div>
+      <div class="croix">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Croix.PNG" alt="Croix" id="croix_i">
+        <p id="croix_t"><strong>La Croix</strong><br>Cette quête est connue pour être une des plus rapides à effectuer. En effet, le but de cette quête est de cliquer au milieu de la croix. Lorsque vous avez cliqué au milieu, la quête est réussie et la barre de complétion des tâche avance!</p>
+      </div>
+    <p id="nom_salle">Quêtes dans Shields:</p>
+      <div class="shields">
+        <img src="Images/The_Skeld/Captures Skeld/Map/Shields.PNG" alt="Shields" id="bouclier">
+      </div>
+      <div class="bou">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Shields.PNG" alt="Shields" id="bou_i">
+        <p id="bou_t"><strong>Les Boucliers!</strong><br>Dans cette quête, vous devez réparer les boucliers du vaisseau en appuyant sur tous les hexagones rouges. Une fois tous les hexagones devenus blancs, les boucliers sont réparés, la quête réussie, et la barre de complétion des tâches avance !</p>
+      </div>
+      <div class="bidule">
+        <img src="Images/Mira_Hq/Quêtes/Diver Power.jpg" alt="Elec" id="bidule_i">
+        <p id="bidule_t"><strong>Le Courant</strong><br>Après avoir effectué la première partie de cette quête à Electrical, regardez votre carte pour savoir où est ce que vous allez devoir effectuer cette quête. (Attention, cette quête peut être dans quasiment toutes les salles de la Map). Ici vous allez devoir appuyer sur le matériau conducteur au milieu pour le faire tourner et rétablir le courant, terminant la quête et faisant avancer la barre de complétion des tâches.</p>
+      </div>
+      <p id="nom_salle">Quêtes dans Comms:</p>
+      <div class="comms">
+        <img src="Images/The_Skeld/Captures Skeld/Map/Comms.PNG" alt="Comms" id="communication">
+      </div>
+      <div class="comms_emerg">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Comms_Emergency.PNG" alt="comms_emergency" id="comms_emerg_i">
+        <div class="double">
+        <p id="comms_emerg_t"><strong>Emergency_Comms!</strong><br>Ce sabotage des Imposteurs empêche à tous les Crewmates de voir leurs objectifs restants et d'utiliser les caméras ou la table d'Admin. Pour tout réparer, rendez vous dans les Comms et tournez la molette jusqu'a trouver le point où les fréquences reviennent à la normale.
+        <p id="sus">En tant qu'imposteur, ce sabotage permet de mettre un frein sur le tempo de la partie, car les Crewmates doivent le réparer avant de continuer à faire leur quêtes, ce qui vous permet de gagner du temps pour vos meurtres sans que la barre de complétion des tâches n'avance. Si vous voulez faire un kill dans un endroit où des caméras sont posés, sabotez les comms pour pouvoir tuer sans être vu !</p>
+      </div>
+      </div>
+      <div class="bidule">
+        <img src="Images/Mira_Hq/Quêtes/Diver Power.jpg" alt="Elec" id="bidule_i">
+        <p id="bidule_t"><strong>Le Courant</strong><br>Après avoir effectué la première partie de cette quête à Electrical, regardez votre carte pour savoir où est ce que vous allez devoir effectuer cette quête. (Attention, cette quête peut être dans quasiment toutes les salles de la Map). Ici vous allez devoir appuyer sur le matériau conducteur au milieu pour le faire tourner et rétablir le courant, terminant la quête et faisant avancer la barre de complétion des tâches.</p>
+      </div>
+      <div class="dl">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Download.PNG" alt="Telechargement" id="dl_i">
+        <p id="dl_t"><strong>Le Télechargement</strong><br>La quête du télechargement est une quête en 2 étapes. Pour la réussir, vous devez cliquer sur le bouton télechargement et attendre que celui ci se termine. Ensuite, vous devez aller à admin pour terminer cette quête et faire avancer a barre de complétion des tâches. </p>
+      </div>
+      <p id="nom_salle">Quêtes dans Storage:</p>
+      <div class="sto">
+        <img src="Images/The_Skeld/Captures Skeld/Map/Storage_Haut.PNG" alt="Cafeteria_Haut" id="sto_H">
+        <img src="Images/The_Skeld/Captures Skeld/Map/Storage_Bas.PNG" alt="Cafeteria_Bas" id="sto_B">
+        <p id="sto_Haut">Haut de Storage</p>
+        <p id="sto_Bas">Bas de Storage</p>
+      </div>
+      <div class="fuel">
+        <img src="Images/The_Skeld/Captures Skeld/Quetes/Gas1.PNG" alt="Fuel" id="fuel_i">
+        <p id="fuel_t">Cette quête s'effectue en 4 parties. D'abord, remplissez votre bidon</p>
       </div>
 
 
+    
 
+
+
+      
+      </div>
     </body>
 
     <foot>
-        >
    </foot>
 </html>
