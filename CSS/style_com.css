@@ -359,3 +359,18 @@ body {
 *, *:before, *:after {
     box-sizing: border-box;
 }
+@media screen and (max-width: 600px) {
+
+    .texte{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(36, 45, 74, 1);
+        text-align: center;
+        background: linear-gradient(#141e30, #243b55);
+        border-radius: 30px;
+        gap: 5PX;
+    }
+}
