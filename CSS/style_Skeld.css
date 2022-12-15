@@ -30,7 +30,7 @@ html{
     bottom:-20px;
     color: white;
     text-align: center;
-    font-size: 3vw;
+    font-size: 200%;
 }
 #titre{
     position: relative;
@@ -47,7 +47,7 @@ html{
     margin-bottom: 28vw;
 }
 #explication{
-    font-size: 3vw;
+    font-size: 120%;
 }
 #sous-titre{
     position: relative;
@@ -554,6 +554,7 @@ html{
 }
 .reac{
     display:grid;
+    grid-template_columns: 500px 500px;
     grid-template-areas: "img img2"
                         " txt txt2";
     gap:90px;
@@ -563,12 +564,12 @@ html{
 }
 #reac_H{
 
-    width: 110%;
+    width: 100%;
     grid-area: img;
 }
 #reac_B{
 
-    width: 118.8%;
+    width: 100%;
     grid-area: img2;
 }
 #reac_Haut{
@@ -674,57 +675,35 @@ html{
     margin-right: 100px;
 }
 #fiole_t{
-    border: 1px solid black;
-    
-    overflow: scroll;
     text-align: center;
     margin-top: 10vw;
     font-size: 1.8vw;
 }
-
-@media screen and (max-width: 900px) {
-    p{
-        margin-top: 0px;
-        width: 500px;
-        height: 100px;
-        overflow: scroll;
-        margin-bottom: 0px;
-    }
-    img{
-        display: none;
-    }
-    #reac_Bas{
-        display: none;
-    }
-    #reac_Haut{
-        display: none;
-    }
-    #Caf_Haut{
-        display: none;
-    }
-    #Caf_Bas{
-        display: none;
-    }
-    #sto_Haut{
-        display: none;
-    }
-    #sto_Bas{
-        display: none;
-    }
-    #explication{
-        overflow:visible;
-    }
-    #scroll{
-        display: none;
-    }
-  }
 html{
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
-    height: 2120em;
     background-repeat: no-repeat;
     z-index: -100000;
 }
 p{
     color: white;
+}
+.fuel {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#fuel_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#fuel_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
 }
