@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
-html {
-    background-color: white;
+html{
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
     background-repeat: no-repeat;
-    height: 400em;
+    height: 2120em;
     z-index: -100000;
 }
 
@@ -24,6 +23,7 @@ html {
 #Map {
     width: 75%;
     height: 75%;
+    border-radius: 25%;
 }
 
 .clement {
@@ -59,6 +59,7 @@ html {
 
 #explication {
     font-size: 120%;
+    text-align: center;
 }
 
 #sous-titre {
@@ -68,6 +69,176 @@ html {
 #nom_salle {
     font-weight: 1000;
     font-size: 150%;
-    color: black;
+    color: white;
     text-align: center;
+}
+.vaisseau{
+    margin-bottom:70px;
+}
+#vaisseau_i{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.cle{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10vw; 
+}
+#cle_i{
+    position: relative;
+    top: 40px;
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#cle_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.navire{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10vw; 
+}
+#navire_i{
+    position: relative;
+    top: 140px;
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#navire_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.storage{
+    margin-bottom:70px;
+}
+#storage_i{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.fuel{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10vw; 
+}
+#fuel_i{
+    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#fuel_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.electrical{
+    margin-bottom:70px;
+}
+#electrical_i{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.lights{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10vw; 
+}
+#lights_i{
+    position: relative;
+    top:80px;
+    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#lights_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.7vw;
+}
+.dl{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10vw; 
+}
+#dl_i{
+    position: relative;
+    top: 50px;
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#dl_t{
+ 
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.security{
+    margin-bottom: 70px;
+}
+#security_i{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+.wire{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10vw; 
+}
+#wire_i{
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#wire_t{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.cam{
+    display:grid;
+    grid-template-areas: "img img2 img3"
+                        "img4 img5 img6";
+    gap:90px;
+    margin:200px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+.spawn{
+    margin-bottom:70px;
+}
+#spawn_i{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+#sus{
+    color: red;
+    text-align: center;
+    font-size: 1.7vw; 
 }

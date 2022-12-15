@@ -384,23 +384,8 @@ html{
     text-align: center;
 
 }
-.fuel{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 10vw; 
-}
-#fuel_i{
-    border-radius: 5%;
-    width: 30%;
-    height: 30%;
-    margin-left: 150px;
-    margin-right: 100px;
-}
-#fuel_t{
-    text-align: center;
-    margin-top: 100px;
-    font-size: 1.8vw;
-}
+
+
 .admin{
     margin-bottom: 70px;
 }
