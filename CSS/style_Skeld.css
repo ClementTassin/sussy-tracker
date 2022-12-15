@@ -554,7 +554,6 @@ html{
 }
 .reac{
     display:grid;
-    grid-template_columns: 500px 500px;
     grid-template-areas: "img img2"
                         " txt txt2";
     gap:90px;
@@ -707,3 +706,39 @@ p{
     margin-top: 100px;
     font-size: 1.8vw;
 }
+@media screen and (max-width: 900px) {
+    p{
+        margin-top: 0px;
+        width: 500px;
+        height: 100px;
+        overflow: scroll;
+        margin-bottom: 0px;
+    }
+    img{
+        display: none;
+    }
+    #reac_Bas{
+        display: none;
+    }
+    #reac_Haut{
+        display: none;
+    }
+    #Caf_Haut{
+        display: none;
+    }
+    #Caf_Bas{
+        display: none;
+    }
+    #sto_Haut{
+        display: none;
+    }
+    #sto_Bas{
+        display: none;
+    }
+    #explication{
+        overflow:visible;
+    }
+    #scroll{
+        display: none;
+    }
+  }
