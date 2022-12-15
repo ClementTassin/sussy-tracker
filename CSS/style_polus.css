@@ -4,8 +4,8 @@ html {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
     background-repeat: no-repeat;
-    height: 2120em;
     z-index: -100000;
+    width:100%
 }
 
 p {
@@ -130,36 +130,44 @@ p {
 
 .Lab {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 200px 15px 200px 50px;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 50px 300px 50px;
     grid-template-areas: "img img2"
         "txt txt2"
         "img3 img4"
         "txt3 txt4";
-    gap: 90px;
+    gap: 50px;
     margin: 100px;
-    margin-bottom: 2px;
+    margin-bottom: 100px;
     margin-top: 0px;
 }
 #Lab_G {
+
     width: 100%;
+    max-width:auto
 }
 
 #Lab_M {
+    position: relative;
     grid-area: img2;
+max-width:auto;
     width: 100%
 }
 
 #Lab_D {
+    position: relative;
     grid-area: img3;
     width: 100%;
-    top: 10%;
+    top: 0%;
+    max-width:auto
 }
 
 #Lab_bas {
+    position:relative;
     width: 100%;
     grid-area: img4;
- 
+    max-width:auto;
+    top:0%;
 }
 
 
@@ -184,12 +192,6 @@ p {
     text-align: center;
 }
 
-#Lab_bas {
-    position: relative;
-    bottom: 90%;
-    grid-area: txt4;
-    text-align: center;
-}
 
 .tmp {
     display: flex;
@@ -455,12 +457,12 @@ p {
 }
 
 #Office_butt {
-    width: 111%;
+    width: 100%;
     grid-area: img;
 }
 
 #Office_D {
-    width: 111%;
+    width: 100%;
     grid-area: img2;
 }
 
@@ -849,6 +851,7 @@ p {
 
 .O2 {
     display: grid;
+    grid-template-columns: 500px 500px;
     grid-template-areas: "img img2"
                         " txt txt2";
     gap: 90px;
