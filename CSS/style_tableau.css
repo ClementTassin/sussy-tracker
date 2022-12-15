@@ -614,22 +614,54 @@ nav ul li:hover > ul {
 }
 
 @keyframes pop {
-    from{
-        background-color: #141e30;
-        top: 0px;
-        opacity: 0%;
-    }
-    to{
-        background-color:#7fafe6;
-        top : -60px;
-        opacity: 100%;
-        
-    }
+  from{
+      background-color: #141e30;
+      top: 0px;
+      opacity: 0%;
+  }   
+  to{
+      background-color:#7fafe6;
+      top : -60px;
+      opacity: 100%;
+      
+  }
 }
 
 nav ul ul li {
-	width: 120px;
-	float:none;
+width: 120px;
+float:none;@keyframes pop {
+  from{
+      background-color: #141e30;
+      top: 0px;
+      opacity: 0%;
+  }   
+  to{
+      background-color:#7fafe6;
+      top : -60px;
+      opacity: 100%;
+      
+  }
+}
+
+nav ul ul li {
+width: 120px;
+float:none;@keyframes pop {
+  from{
+      background-color: #141e30;
+      top: 0px;
+      opacity: 0%;
+  }   
+  to{
+      background-color:#7fafe6;
+      top : -60px;
+      opacity: 100%;
+      
+  }
+}
+
+nav ul ul li {
+width: 120px;
+float:none;
 	display:list-item;
 	position: relative;
 }

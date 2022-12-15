@@ -124,9 +124,6 @@ nav ul ul li {
 }
 
 
-html {
-    height: 210vh;
-  }
   fieldset{
     border: none;
     display: flex;
