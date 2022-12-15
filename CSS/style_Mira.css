@@ -11,7 +11,6 @@ html{
     z-index: -100;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
-
   
   
 #Map{
@@ -56,7 +55,7 @@ html{
 #nom_salle{
     font-weight: 1000;
     font-size: 150%;
-    color: black;
+    color: white;
     text-align: center;
 }
 .cafet{
@@ -108,7 +107,7 @@ html{
 #wire_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .dl{
     display:flex;
@@ -126,7 +125,7 @@ html{
  
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .emergency{
     display:flex;
@@ -143,7 +142,7 @@ html{
 #Emerg_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 #Weapons{
     position: relative;
@@ -169,7 +168,7 @@ html{
 #astero_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 #O2{
     position: relative;
@@ -194,7 +193,7 @@ html{
 #feuilles_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .poub{
     display:flex;
@@ -212,7 +211,7 @@ html{
 #poub_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .bidule{
     display:flex;
@@ -229,7 +228,7 @@ html{
 #bidule_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .O2_emerg{
     display:flex;
@@ -246,7 +245,7 @@ html{
 #O2_emerg_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 120%;
+    font-size: 1.7vw;
 }
 .navigation{
     margin-bottom: 70px;
@@ -272,7 +271,7 @@ html{
 #navire_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size:  1.8vw;
 }
 .croix{
     display:flex;
@@ -289,7 +288,7 @@ html{
 #croix_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .shields{
     margin-bottom: 70px;
@@ -314,12 +313,12 @@ html{
 #bou_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 #sus{
     color: red;
     text-align: center;
-    font-size: 130%;    
+    font-size: 1.8vw;    
 }
 .comms{
     margin-bottom: 70px;
@@ -345,7 +344,7 @@ html{
 #comms_emerg_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 .sto{
     display:grid;
@@ -392,7 +391,7 @@ html{
 #fuel_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
 }
 html{
     background: rgb(255,255,255);
@@ -417,5 +416,24 @@ html{
 #diagnostic_t{
     text-align: center;
     margin-top: 100px;
-    font-size: 130%;
+    font-size: 1.8vw;
+}
+.Office{
+    margin-bottom: 70px;
+}
+#Office{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+}
+html{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
+    background-repeat: no-repeat;
+    height: 2120em;
+    z-index: -100000;
+}
+p{
+    color: white;
 }
