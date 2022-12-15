@@ -427,6 +427,15 @@ html{
     height: 20%;
     left: 40%;
 }
+.med{
+    margin-bottom: 70px;
+}
+#med{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+}
 html{
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
