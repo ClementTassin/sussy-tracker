@@ -14,8 +14,8 @@ html{
   
   
 #Map{
-    width: 75%;
-    height: 75%; 
+    width: 70%;
+    height: 70%; 
 }
 .clement{
     display:flex;
@@ -393,13 +393,6 @@ html{
     margin-top: 100px;
     font-size: 1.8vw;
 }
-html{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
-    background-repeat: no-repeat;
-    height: 400em;
-    z-index: -100000;
-}
 
 .diagnostic{
     display:flex;
@@ -427,13 +420,32 @@ html{
     height: 20%;
     left: 40%;
 }
+.med{
+    margin-bottom: 70px;
+}
+#med{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+}
 html{
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
     background-repeat: no-repeat;
-    height: 2120em;
     z-index: -100000;
 }
 p{
     color: white;
+}
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+    z-index: 10;
+  }
+#scroll_to_top img {
+    width: 50px;
 }

@@ -727,3 +727,58 @@ html{
 p{
     color: white;
 }
+.fuel {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#fuel_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#fuel_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+@media screen and (max-width: 900px) {
+    p{
+        margin-top: 0px;
+        width: 500px;
+        height: 100px;
+        overflow: scroll;
+        margin-bottom: 0px;
+    }
+    img{
+        display: none;
+    }
+    #reac_Bas{
+        display: none;
+    }
+    #reac_Haut{
+        display: none;
+    }
+    #Caf_Haut{
+        display: none;
+    }
+    #Caf_Bas{
+        display: none;
+    }
+    #sto_Haut{
+        display: none;
+    }
+    #sto_Bas{
+        display: none;
+    }
+    #explication{
+        overflow:visible;
+    }
+    #scroll{
+        display: none;
+    }
+  }
