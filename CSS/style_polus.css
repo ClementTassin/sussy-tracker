@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&family=Roboto:wght@300&dilay=swap');
 
-html{
+html {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
     background-repeat: no-repeat;
     height: 2120em;
     z-index: -100000;
+}
+
+p {
+    color: white;
 }
 
 #background-video {
@@ -23,7 +27,6 @@ html{
 #Map {
     width: 75%;
     height: 75%;
-    border-radius: 25%;
 }
 
 .clement {
@@ -45,6 +48,7 @@ html{
 #titre {
     position: relative;
     top: 40px;
+    color: white;
     text-align: center;
     font-family: 'Nerko One', cursive;
     font-size: 400%;
@@ -59,186 +63,809 @@ html{
 
 #explication {
     font-size: 120%;
-    text-align: center;
 }
 
 #sous-titre {
     position: relative;
     text-align: center;
 }
+
 #nom_salle {
     font-weight: 1000;
     font-size: 150%;
     color: white;
     text-align: center;
 }
-.vaisseau{
-    margin-bottom:70px;
+
+.Drop {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+    justify-content: center
 }
-#vaisseau_i{
-    position: relative;
+
+#navette {
+    width: 50%;
+}
+
+.cles {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#cles_i {
+    border-radius: 5%;
     width: 40%;
     height: 40%;
-    left: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
 }
-.cle{
-    display:flex;
+
+#cles_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.carte {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 10vw; 
+    margin-bottom: 10vw;
 }
-#cle_i{
-    position: relative;
-    top: 40px;
+
+#carte_i {
     border-radius: 5%;
     width: 40.5%;
     height: 40.5%;
     margin-left: 150px;
     margin-right: 100px;
 }
-#cle_t{
+
+#carte_t {
     text-align: center;
     margin-top: 100px;
     font-size: 1.8vw;
 }
-.navire{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 10vw; 
+
+#Lab_G {
+    width: 100%;
 }
-#navire_i{
+
+#Lab_M {
+    grid-area: img2;
+    width: 100%
+}
+
+#Lab_D {
+    grid-area: img3;
+    width: 100%;
+    top: 10%;
+}
+
+#Lab_bas {
+    width: 100%
+}
+
+.Lab {
+    display: grid;
+    grid-template-areas: "img img2"
+        "txt txt2"
+        "img3 img4"
+        "txt3 txt4";
+    gap: 90px;
+    margin: 200px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+#Lab_gauche {
     position: relative;
-    top: 140px;
+    bottom: 90%;
+    grid-area: txt;
+    text-align: center;
+}
+
+#Lab_milieu {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt2;
+    text-align: center;
+}
+
+#Lab_droite {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt3;
+    text-align: center;
+}
+
+#Lab_bas {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt4;
+    text-align: center;
+}
+
+.tmp {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#tmp_i {
     border-radius: 5%;
     width: 40.5%;
     height: 40.5%;
     margin-left: 150px;
     margin-right: 100px;
 }
-#navire_t{
+
+#tmp_t {
     text-align: center;
     margin-top: 100px;
     font-size: 1.8vw;
 }
-.storage{
-    margin-bottom:70px;
+
+.télé {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
 }
-#storage_i{
+
+#télescope_i {
+    border-radius: 5%;
+    width: 20%;
+    height: 20%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#télescope_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.deconta {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+    justify-content: center
+}
+
+#deconta {
+    width: 50%;
+}
+
+.wire {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#wire_i {
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#wire_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.Spec {
+    margin-bottom: 70px;
+}
+
+#Spec {
     position: relative;
     width: 40%;
     height: 40%;
     left: 30%;
 }
-.fuel{
-    display:flex;
+.tri {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 10vw; 
+    margin-bottom: 10vw;
 }
-#fuel_i{
+
+#tri_i {
+    border-radius: 5%;
+    width: 20%;
+    height: 20%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#tri_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+    
+
+
+.navire {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#navire_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#navire_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.croix {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#croix_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#croix_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.Admin {
+    margin-bottom: 70px;
+}
+
+#Admin {
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+
+.water {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#water_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#water_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.scan {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#scan_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#scan_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.vannes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#vannes_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#vannes_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+.noeud {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#noeud_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#noeud_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+#sus {
+    color: red;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.Office {
+    display: grid;
+    grid-template-areas: "img img2"
+        " txt txt2";
+    gap: 90px;
+    margin: 100px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+#Office_butt {
+    width: 111%;
+    grid-area: img;
+}
+
+#Office_D {
+    width: 111%;
+    grid-area: img2;
+}
+
+#off_butt {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt;
+    text-align: center;
+}
+
+#off_D {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt2;
+    text-align: center;
+}
+
+.comms_emerg {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#comms_emerg_i {
+    border-radius: 5%;
+    width: 40.5%;
+    height: 40.5%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#comms_emerg_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.sto {
+    margin-bottom: 70px;
+}
+
+#sto {
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+
+
+.fuel {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#fuel_i {
     border-radius: 5%;
     width: 30%;
     height: 30%;
     margin-left: 150px;
     margin-right: 100px;
 }
-#fuel_t{
+
+#fuel_t {
     text-align: center;
     margin-top: 100px;
     font-size: 1.8vw;
 }
-.electrical{
-    margin-bottom:70px;
+
+.Weapons {
+    margin-bottom: 70px;
 }
-#electrical_i{
+
+#weap {
     position: relative;
     width: 40%;
     height: 40%;
     left: 30%;
 }
-.lights{
-    display:flex;
+
+.carte {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 10vw; 
+    margin-bottom: 10vw;
 }
-#lights_i{
-    position: relative;
-    top:80px;
+
+#carte_i {
     border-radius: 5%;
     width: 30%;
     height: 30%;
     margin-left: 150px;
     margin-right: 100px;
 }
-#lights_t{
+
+#carte_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#table_i {
+    position: relative;
+    top: 180px;
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#table_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 100%;
+}
+
+.Comms {
+    margin-bottom: 70px;
+}
+
+#Comms {
+    position: relative;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+
+.timing {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#timing_i {
+    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#timing_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.elec1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#elec1_i {
+    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#elec1_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.lights {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#lights_i {
+    position: relative;
+    top: 80px;
+    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#lights_t {
     text-align: center;
     margin-top: 100px;
     font-size: 1.7vw;
 }
-.dl{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 10vw; 
+
+.boiler {
+    margin-bottom: 70px;
 }
-#dl_i{
+
+#boil {
     position: relative;
-    top: 50px;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+}
+
+.ali {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#ali_i {
+    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#ali_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.sec {
+    margin-bottom: 70px;
+}
+
+#secu {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+}
+
+.cam {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#cam_i {
+    position: relative;
+    top: 115px;
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#cam_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.elec {
+    margin-bottom: 70px;
+}
+
+#elec {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    left: 20%;
+}
+
+
+.simon {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#simon_i {
+    position: relative;
+    top: 65px;
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#simon_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.compte {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#compte_i {
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#compte_t {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.Security {
+    margin-bottom: 70px;
+}
+
+#Security {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+}
+
+.ext {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#ext {
+    width: 30%;
+    height: 30%;
+}
+
+.scan {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#scan_i {
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#scan_t {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.8vw;
+}
+
+.fiole {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vw;
+}
+
+#fiole_i {
+    border-radius: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#fiole_t {
+    text-align: center;
+    margin-top: 10vw;
+    font-size: 1.8vw;
+}
+
+.O2 {
+    display: grid;
+    grid-template-areas: "img img2"
+        " txt txt2";
+    gap: 90px;
+    margin: 100px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+#O2_tree {
+    width: 111%;
+    grid-area: img;
+}
+
+#O2_b {
+    grid-area: img2;
+    width: 100%;
+}
+
+#02_Haut {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt;
+    text-align: center;
+}
+
+#02_Bas {
+    position: relative;
+    bottom: 90%;
+    grid-area: txt2;
+    text-align: center;
+}
+
+.dl {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vw;
+}
+
+#dl_i {
     border-radius: 5%;
     width: 40.5%;
     height: 40.5%;
     margin-left: 150px;
     margin-right: 100px;
 }
-#dl_t{
- 
+
+#dl_t {
     text-align: center;
     margin-top: 100px;
     font-size: 1.8vw;
-}
-.security{
-    margin-bottom: 70px;
-}
-#security_i{
-    position: relative;
-    width: 40%;
-    height: 40%;
-    left: 30%;
-}
-.wire{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 10vw; 
-}
-#wire_i{
-    border-radius: 5%;
-    width: 40%;
-    height: 40%;
-    margin-left: 150px;
-    margin-right: 100px;
-}
-#wire_t{
-    text-align: center;
-    margin-top: 100px;
-    font-size: 1.8vw;
-}
-.cam{
-    display:grid;
-    grid-template-areas: "img img2 img3"
-                        "img4 img5 img6";
-    gap:90px;
-    margin:200px;
-    margin-bottom: 2px;
-    margin-top: 0px;
-}
-.spawn{
-    margin-bottom:70px;
-}
-#spawn_i{
-    position: relative;
-    width: 40%;
-    height: 40%;
-    left: 30%;
-}
-#sus{
-    color: red;
-    text-align: center;
-    font-size: 1.7vw; 
 }
