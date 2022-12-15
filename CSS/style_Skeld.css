@@ -30,7 +30,7 @@ html{
     bottom:-20px;
     color: white;
     text-align: center;
-    font-size: 200%;
+    font-size: 3vw;
 }
 #titre{
     position: relative;
@@ -47,7 +47,7 @@ html{
     margin-bottom: 28vw;
 }
 #explication{
-    font-size: 120%;
+    font-size: 3vw;
 }
 #sous-titre{
     position: relative;
@@ -674,15 +674,54 @@ html{
     margin-right: 100px;
 }
 #fiole_t{
+    border: 1px solid black;
+    
+    overflow: scroll;
     text-align: center;
     margin-top: 10vw;
     font-size: 1.8vw;
 }
+
+@media screen and (max-width: 900px) {
+    p{
+        margin-top: 0px;
+        width: 500px;
+        height: 100px;
+        overflow: scroll;
+        margin-bottom: 0px;
+    }
+    img{
+        display: none;
+    }
+    #reac_Bas{
+        display: none;
+    }
+    #reac_Haut{
+        display: none;
+    }
+    #Caf_Haut{
+        display: none;
+    }
+    #Caf_Bas{
+        display: none;
+    }
+    #sto_Haut{
+        display: none;
+    }
+    #sto_Bas{
+        display: none;
+    }
+    #explication{
+        overflow:visible;
+    }
+    #scroll{
+        display: none;
+    }
+  }
 html{
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
     background-repeat: no-repeat;
-    height: 2120em;
     z-index: -100000;
 }
 p{
