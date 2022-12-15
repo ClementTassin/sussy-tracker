@@ -282,10 +282,13 @@ h2{
   #txtmira{
     display: grid;
     grid-area: txt;
+    width: 100%;
+    height: 100%;
     color: white;
     padding-top: 3%;
-    font-size: 70px;
+    font-size: auto;
     margin-top: 5%;
+    text-align: center;
   }
   .prez2{
     display: grid;
@@ -307,10 +310,13 @@ h2{
   #txtquest {
     display: grid;
     grid-area: txt;
+    width: 100%;
+    height: 100%;
     color: white;
     padding-top: 15%;
-    margin-left: -40%;
+margin-left: -20%;
     color: black;
+
   }
 #comu{
   animation: h1 3s infinite;
@@ -347,11 +353,13 @@ h2{
 #txtpets {
   display: grid;
   grid-area: txt;
-  width: auto;
+  width: 100%;
+  height: 100%;
   color: white;
   padding-top: 0px;
   margin-left: -5%;
   color: white;
+  font-size: 40px;
 }
 
 #last{
@@ -614,7 +622,7 @@ body{
 
 
 /* responsive design  FOR PHONE */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1100px) {
 
   .footer {
     overflow: hidden;
@@ -722,8 +730,8 @@ body{
   {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: -10px;
+    left: 5px;
 
     z-index: 1;
     
@@ -864,6 +872,7 @@ display: none;
 
  
   #premiertext {
+    display: block;
       width: 100%;
       height: auto;
       font-size: 26px;
@@ -1033,15 +1042,15 @@ display: none;
     height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 40px;
+    margin-left: 18vw;
   }
   #txtpets {
     display: block;
     grid-area: none;
     width: 100%;
     color: white;
-    padding-top: 13%;
-    margin-left: 0;
+    padding-top: 3%;
+    margin-left: 10%;
     color: white;
     
   }
@@ -1158,4 +1167,34 @@ display: none;
 }
 
 }
+@media screen and (max-width: 731px) {
 
+  #pets{
+    display: none;
+  }
+  #txtpets {
+    display: block;
+    grid-area: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 3%;
+    margin-left: 0;
+    color: white;
+  }
+  h2{
+    font-family: 'Raleway Dots', cursive;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-top: inherit;
+  }
+  .prez3{
+    display: flex;
+    gap: 0%;
+    grid-template-areas: none;
+    background-image: url('../Images/bckg4.jpg');
+    background-size: cover;
+    box-shadow: inset 0px 10px 21px  rgb(0, 0, 0), inset 0px -10px 21px rgb(0, 0, 0);
+  
+  }
+}
