@@ -56,7 +56,7 @@ html{
 #nom_salle{
     font-weight: 1000;
     font-size: 150%;
-    color: black;
+    color: white;
     text-align: center;
 }
 .cafet{
@@ -695,9 +695,11 @@ html{
 }
 html{
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 30%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,85,1) 10%);
     background-repeat: no-repeat;
-    height: 400em;
+    height: 2120em;
     z-index: -100000;
 }
-
+p{
+    color: white;
+}
