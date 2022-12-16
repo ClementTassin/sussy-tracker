@@ -448,7 +448,7 @@ html{
 }
 #table_t{
     text-align: center;
-    font-size: 120%;
+    font-size: 1.8vw;
 }
 .elec{
     display:grid;
@@ -699,18 +699,29 @@ html{
 }
 
 @media screen and (max-width: 900px) {
+    body{
+        position: relative;
+        bottom: 100%;
+    }
+    h1{
+        display:none;
+    }
+    #sous-titre{
+        display:none;
+    }
     #explication{
+        display:none;
         overflow-x: hidden;
         width: 100%;
         height: 100px;
         overflow: scroll;
     }
     p{
-        font-size:100009090000000%;
+        font-size:100%;
         overflow-x: hidden;
         width: 100%;
         height: 100px;
-        overflow: scroll;
+        margin-top: 0px;
     }
     img{
         display: none;
