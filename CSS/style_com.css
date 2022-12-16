@@ -384,6 +384,7 @@ body {
         background: linear-gradient(#141e30, #243b55);
         border-radius: 30px;
         gap: 5PX;
+        margin-top: 50px;
     }
     #description {
         background-color: #141e30;
