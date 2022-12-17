@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Fredoka+One&family=Kanit:wght@500&family=Quicksand:wght@600&family=Rajdhani:wght@600&family=Raleway+Dots&family=Raleway:wght@200&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Teko&family=Ubuntu:wght@500&display=swap');
 html{
     background-color: white;
 }
@@ -16,7 +16,8 @@ html{
   
 #Map{
     width: 75%;
-    height: 75%; 
+    height: 75%;
+    margin-top: 60PX; 
 }
 .clement{
     display:flex;
@@ -697,60 +698,6 @@ html{
     margin-top: 10vw;
     font-size: 1.8vw;
 }
-
-@media screen and (max-width: 900px) {
-    body{
-        position: relative;
-        bottom: 100%;
-    }
-    h1{
-        display:none;
-    }
-    #sous-titre{
-        display:none;
-    }
-    #explication{
-        display:none;
-        overflow-x: hidden;
-        width: 100%;
-        height: 100px;
-        overflow: scroll;
-    }
-    p{
-        font-size:100%;
-        overflow-x: hidden;
-        width: 100%;
-        height: 100px;
-        margin-top: 0px;
-    }
-    img{
-        display: none;
-    }
-    #reac_Bas{
-        display: none;
-    }
-    #reac_Haut{
-        display: none;
-    }
-    #Caf_Haut{
-        display: none;
-    }
-    #Caf_Bas{
-        display: none;
-    }
-    #sto_Haut{
-        display: none;
-    }
-    #sto_Bas{
-        display: none;
-    }
-    #explication{
-        overflow:visible;
-    }
-    #scroll{
-        display: none;
-    }
-  }
 .double_admin{
     height: 400px;
     margin-top: 50px;
@@ -784,3 +731,434 @@ html{
 p{
     color: white;
 }
+/*hide the menu*/
+#menu{
+  
+    display: none;
+  }
+  #in{
+    display: none;
+  }
+  /* hide the checkbox */
+  #menu input{
+    display: none;
+  }
+  
+  #logo{
+      height: auto;
+      width: 70px;
+      margin: 10px;
+  }
+  #logo2{
+      height: auto;
+      width: 200px;
+      margin: 10px;
+  }
+  #logo3{
+    height: auto;
+    width: 70px;
+    margin: 10px;
+    align-self: flex-start;
+  }
+  nav{
+    border: rgb(229, 229, 255) 3px solid;
+    order: 0;
+      z-index: 1;
+      background: linear-gradient(#141e30, #243b55);
+      display: flex;
+      margin-top: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+      border-radius: 30px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 43px;
+  }
+  
+  p {
+      text-align: center;
+  }
+  
+  
+  nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: relative;
+      display: flex;
+      gap: 39px;
+      flex-wrap: wrap;
+      }
+      
+  nav ul li {
+      display:inline-block;
+      }
+  
+  nav a {
+      display:block;
+      padding:0 10px;	
+      color:#FFF;
+      font-size:20px;
+      line-height: 40px;
+      text-decoration:none;
+      font-family: 'Raleway', sans-serif;
+      position: relative;
+  }
+  
+    
+    nav a::before {
+      content: '';
+      display: block;
+      height: 3px;
+      background-color: #444;
+      position: absolute;
+      top: 10%;
+      width: 0%;
+      transition: all ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+      width: 85%;
+      background-color:#004ea7;
+    }
+  
+  
+    nav ul ul {
+      display: none;
+      position: absolute; 
+  }
+      
+  
+  nav ul li:hover > ul {
+      animation: pop 0.8s ;
+      animation-fill-mode: forwards;  
+      display:inherit;
+      border-radius: 20px;
+      top : 55px;
+  }
+  
+  @keyframes pop {
+      from{
+          background-color: #141e30;
+          top: 0px;
+          opacity: 0%;
+      }
+      to{
+          background-color:#7fafe6;
+          top : -60px;
+          opacity: 100%;
+          
+      }
+  }
+  
+  nav ul ul li {
+      width: 120px;
+      float:none;
+      display:list-item;
+      position: relative;
+  }
+@media screen and (max-width: 900px) {
+    #logo{
+        height: auto;
+        width: 70px;
+        margin: 10px;
+    }
+    #logo2{
+        height: auto;
+        width: 200px;
+        margin: 10px;
+    }
+    #logo3{
+  
+      width: 0px;
+      margin: 0px;
+    }
+    /* on cache l'ancien menu */
+    nav{
+      display: block;
+      border:none;
+      background: none;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 0;
+      position: fixed;
+      top: 0;
+    }
+
+
+    #menu{
+      display:block;
+    }
+   
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      top: 10px;
+      left: 5px;
+  
+      z-index: 1;
+      
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #232323;
+      
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+      color: tomato;
+    }
+    
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; 
+      z-index: 2; 
+      
+      -webkit-touch-callout: none;
+    }
+  
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #cdcdcd;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+   
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+   
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+  
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 90px;
+  
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+   
+    nav ul {
+        display: none;
+            }
+            
+          nav ul li {
+            display:inline-block;
+        
+            }
+    body{
+        position: static;
+        margin: 0%;
+        background: linear-gradient(#141e30, #243b55);
+    }
+    h1{
+        display:none;
+    }
+    #sous-titre{
+        display:none;
+    }
+    #explication{
+        display:none;
+    }
+    p{
+        font-size:10px;
+        overflow-x: hidden;
+        margin-top: 0px;
+    }
+    #wire_t{
+        font-size: larger;
+    }
+    #dl_t{
+        font-size: larger;
+    }
+    #poub_t{
+        font-size: larger;
+    }
+    #Emerg_t{
+        font-size: larger;
+    }
+    #sus{
+        font-size: larger;
+    }
+    .double_admin{
+        height: 100%;
+        margin-top: 0;
+        overflow:hidden;
+        overflow-x: hidden;
+    }
+    #nom_salle{
+        margin-top: 70px;
+    }
+    #astero_t{
+        font-size: larger;
+    }
+    #feuilles_t{
+        font-size: larger;
+    }
+    #bidule_t{
+        font-size: larger;
+    }
+    #O2_emerg_t{
+        font-size: larger;
+    }
+    #navire_t{
+        font-size: larger;
+    }
+    #croix_t{
+        font-size: larger;
+    }
+    #bou_t{
+        font-size: larger;
+    }
+    #comms_emerg_t{
+        font-size: larger;
+    }
+    #fuel_t{
+        font-size: larger;
+    }
+    .fuel{
+        margin: 0 0 0 0;
+    }
+    #carte_t{
+        font-size: larger;
+    }
+    #table_t{
+        font-size: larger;
+    }
+    #timing_t{
+        font-size: larger;
+    }
+    #elec1_t{
+        font-size: larger;
+    }
+    #lights_t{
+        font-size: larger;
+    }
+    #ali_t{
+        font-size: larger;
+    }
+    #cam_t{
+        font-size: larger;
+    }
+    #simon_t{
+        font-size: larger;
+    }
+    #compte_t{
+        font-size: larger;
+        display: none;
+    }
+    #fiole_t{
+        font-size: larger;
+    }
+    #scan_t{
+        font-size: larger;
+    }
+    video{
+        display: none;
+    }
+    img{
+        display: none;
+    }
+   
+    #reac_Bas{
+        display: none;
+    }
+    #reac_Haut{
+        display: none;
+    }
+    #Caf_Haut{
+        display: none;
+    }
+    #Caf_Bas{
+        display: none;
+    }
+    #sto_Haut{
+        display: none;
+    }
+    #sto_Bas{
+        display: none;
+    }
+    #explication{
+        overflow:visible;
+    }
+    #scroll{
+        display: none;
+    }
+  }
+
