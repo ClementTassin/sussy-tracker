@@ -409,17 +409,7 @@ nav ul ul li {
     border-bottom : 1px solid #9EA0A1;
     padding-bottom : 25px;
 }
-#scroll_to_top {
-  position: fixed;
-  width: 25px;
-  height: 25px;
-  bottom: 50px;
-  right: 30px;
-  z-index: 10;
-}
-#scroll_to_top img {
-  width: 50px;
-}
+
 .footer {
   display: flex;
   flex-flow: row wrap;
@@ -444,7 +434,28 @@ nav ul ul li {
   text-transform: lowercase;
   font-size: 1.5rem;
 }
-
+h2{
+  font-size: 130%;
+  width: 300px;
+  text-align: center;
+  align-self: center;
+}
+h3{
+  font-size: 100%;
+  width: 100%;
+  text-align: center;
+}
+p{
+  width: 300px;
+  text-align: center;
+  font-size: 100%;
+  align-self: center;
+}
+.explication{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .footer__addr h2 {
   margin-top: 1.3em;
   font-size: 15px;
