@@ -28,6 +28,7 @@ td,th {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+
 #logo3{
   height: auto;
   width: 70px;
@@ -229,6 +230,10 @@ nav ul ul li {
     position: absolute;
     display: block;
   }
+  #cond{
+    text-align: center;
+  }
+
   #condition:visited{
     color: #03e9f4;
     text-decoration: none;
