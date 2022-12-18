@@ -159,7 +159,6 @@ nav ul ul li {
     margin: 0 AUTO;
     margin-top:  0px; 
     letter-spacing: .15em;
-    font-size: auto; 
     position: relative;
     top: 200px;
     animation: 
@@ -182,7 +181,6 @@ nav ul ul li {
     margin: 0 AUTO;
     margin-top:  0px; 
     letter-spacing: .15em;
-    font-size: auto; 
     animation: 
       typing 3.4s steps(30, end),
       blink-caret 0.5s step-end infinite;
@@ -203,7 +201,6 @@ font-size: 40px;
     margin: 0 AUTO;
     margin-top:  0px; 
     letter-spacing: .15em;
-    font-size: auto; 
     animation: 
       typing3 3.4s steps(18, end),
       blink-caret 0.5s step-end infinite;
@@ -286,7 +283,6 @@ h2{
     height: 100%;
     color: white;
     padding-top: 3%;
-    font-size: auto;
     margin-top: 5%;
     text-align: center;
   }
@@ -881,12 +877,8 @@ display: none;
       text-align: center;
       color: #fff;
       font-family: 'Kanit', sans-serif;
-      overflow: none; 
-      border-right: none; 
-      white-space: none;
-      margin: none;
-      position:block;
-      letter-spacing: none;
+      border-right: none;   
+      margin: 0;
       top: 150px;
       animation: none;
       
@@ -905,9 +897,7 @@ display: none;
       border-right: none; 
       white-space: nowrap;
       margin: 0 0;
-      margin-top:  none ; 
       letter-spacing: .15em;
-      font-size: auto; 
       animation:none;
       
   
@@ -925,9 +915,7 @@ display: none;
       border-right: none; 
       white-space: nowrap;
       margin: 0 0;
-      margin-top:  none ; 
       letter-spacing: .15em;
-      font-size: auto; 
       animation:none;
   
   }

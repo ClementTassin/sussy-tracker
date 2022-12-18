@@ -272,13 +272,11 @@ nav ul ul li {
 #Lab_G {
 
     width: 100%;
-    max-width:auto
 }
 
 #Lab_M {
     position: relative;
     grid-area: img2;
-max-width:auto;
     width: 100%
 }
 
@@ -287,14 +285,12 @@ max-width:auto;
     grid-area: img3;
     width: 100%;
     top: 0%;
-    max-width:auto
 }
 
 #Lab_bas {
     position:relative;
     width: 100%;
     grid-area: img4;
-    max-width:auto;
     top:0%;
 }
 

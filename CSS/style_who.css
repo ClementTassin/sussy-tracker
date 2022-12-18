@@ -302,7 +302,6 @@ main div h1 {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 100px;
     color: #ffffff;
-    line-height: -1;
     margin: 0.6em 0;
     font-size: 1rem;
     padding: 0 1.3em;
@@ -355,9 +354,9 @@ main div h1 {
     box-shadow: none;
     font-size: 20px;
 
-    margin: NONE;
+    margin: 0;
     width: auto;
-    padding: none;
+    padding: 0;
 
     text-align:inherit;
 
@@ -433,9 +432,9 @@ iframe {
 }
 @keyframes color {
     from{
-        text-shadow: 2 0 3px rgba(180,114,166,1); color: #fff;
+        text-shadow: 2 0 3px rgba(180,114,166); color: #fff;
     }to{
-        text-shadow: 0 0 3px rgba(158,82,82,1); color: #fff;
+        text-shadow: 0 0 3px rgba(158,82,82); color: #fff;
     }
 }
 #scroll_to_top {
@@ -645,306 +644,7 @@ iframe {
         
       nav ul li {
         display:inline-block;
-    
-        }
-      #grand{
-        display: none;
-      }
-    
-      #grand #logo3{
-        width: 0px;
-        height: 0px;
-      }
-    
-     
-      #premiertext {
-        display: block;
-          width: 100%;
-          height: auto;
-          font-size: 26px;
-          text-align: center;
-          color: #fff;
-          font-family: 'Kanit', sans-serif;
-          overflow: none; 
-          border-right: none; 
-          white-space: none;
-          margin: none;
-          position:block;
-          letter-spacing: none;
-          top: 150px;
-          animation: none;
-          
-        }
-      
-      .stats{
-        position: relative;
-        width: 100%;
-        text-align: center;
-        top:60px;
-        LEFT: 0;
-        font-size: 26px;
-          color: rgb(255, 255, 255);
-          font-family: 'Kanit', sans-serif;
-          overflow: hidden; 
-          border-right: none; 
-          white-space: nowrap;
-          margin: 0 0;
-          margin-top:  none ; 
-          letter-spacing: .15em;
-          font-size: auto; 
-          animation:none;
-          
-      
-      }
-      .stats2{
-        position: relative;
-        width: 100%;
-        text-align: center;
-        top:0px;
-        LEFT: 0;
-        font-size: 26px;
-          color: rgb(255, 255, 255);
-          font-family: 'Kanit', sans-serif;
-          overflow: hidden; 
-          border-right: none; 
-          white-space: nowrap;
-          margin: 0 0;
-          margin-top:  none ; 
-          letter-spacing: .15em;
-          font-size: auto; 
-          animation:none;
-      
-      }
-      h2{
-        font-family: 'Raleway Dots', cursive;
-        font-size: inherit;
-        padding-left: inherit;
-        padding-top: inherit;
-        text-align: center;
-      }
-      #deuxiemetext {
-          position: relative;
-          -webkit-text-stroke: 1px rgb(255, 255, 255);
-          font-family: 'Kanit', sans-serif, Helvetica, Arial, sans-serif;
-          font-size: 4rem;
-          font-weight: 100;
-          letter-spacing: 2px;
-          text-align: center;
-          color: white;
-          -webkit-background-clip: text;
-          background-image: -webkit-linear-gradient(130deg, #f35626, #feab3a);
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: hue 10s infinite linear;
-      }
-      
-      @-webkit-keyframes hue {
-        from {
-          -webkit-filter: hue-rotate(0deg);
-        }
-        to {
-          -webkit-filter: hue-rotate(-360deg);
-        }
-      }
-    
-        .prez{
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          background-image: url('../Images/bckg3.jpg');
-          background-size:cover;
-          box-shadow: inset 0px 10px 21px  rgb(0, 0, 0), inset 0px -10px 21px rgb(0, 0, 0);
-        }
-        .pres{
-          display: flex;      
-          width: 100%;    
-          justify-content: center;                                           
-        }
-        #mira{
-          display: none;
-        }
-        #txtmira{
-          display: flex;
-          color: white;
-          padding-top: 0;
-          margin-right: 0px;
-          font-size: 30px;
-          margin-top: 0;
-        }
-        .prez2{
-          display: flex;
-          flex-direction: row;
-          grid-template-areas: none;
-          background-image: url('../Images/bckg2.jpg');
-          background-size: 100%;
-          box-shadow: inset 0px 10px 21px  rgb(0, 0, 0), inset 0px -10px 21px rgb(0, 0, 0);
-        
-        }
-        #quest{
-          display: block;
-          grid-area: none;
-          width: 65%;
-          height: auto;
-          padding-left: 13%;
-          border-radius: 20%;
-          margin-left: -10%;
-        }
-        #txtquest {
-          display: block;
-          grid-area: none;
-          color: white;
-          padding-top: 6%;
-          margin-left: -40%;
-          font-size: 30px;
-          color: black;
-        }
-      #comu{
-        animation: h1 3s infinite;
-        color: white;
-        font-family: 'Teko', sans-serif;
-        text-align: center;
-        font-size: 70px;
-      }
-      @keyframes h1 {
-        0%   {text-shadow: 0 0 3px #FF0000; color: #fff;}
-        25%  {text-shadow: 0 0 12px #FF0000;}
-        50%  {text-shadow: 0 0 20px #FF0000; color: pink;}
-        75%  {text-shadow: 0 0 12px #FF0000;}
-        100% {text-shadow: 0 0 3px #FF0000; color: #fff;}
-      }
-      
-      .prez3{
-        display: flex;
-        gap: 20%;
-        grid-template-areas: none;
-        background-image: url('../Images/bckg4.jpg');
-        background-size: cover;
-        box-shadow: inset 0px 10px 21px  rgb(0, 0, 0), inset 0px -10px 21px rgb(0, 0, 0);
-      
-      }
-      #pets{
-        display: block;
-        grid-area: none;
-        width: 100%;
-        height: auto;
-        padding-top: 200px;
-        padding-bottom: 40px;
-        margin-left: 18vw;
-      }
-      #txtpets {
-        display: block;
-        grid-area: none;
-        width: 100%;
-        color: white;
-        padding-top: 3%;
-        margin-left: 10%;
-        color: white;
-        
-      }
-      
-      #last{
-        font-size: 2em;
-        letter-spacing: 1px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: 'Comfortaa', cursive;
-        background: url('https://www.123freevectors.com/ezoimgfmt/i2.wp.com/files.123freevectors.com/wp-content/original/113735-colorful-diagonal-stripes-background-vector.jpg');
-        color: #FFF;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: text 20s linear infinite;
-        text-align: center;
-        
-      }
-      @keyframes text {
-        from {
-          background-position: 0% 50%;
-        }
-        to {
-          background-position: 400% 50%;
-        }
-      }
-      
-      .wrap {
-      text-align: center;
-      text-decoration: none;
-      }
-      
-      .button {
-        text-decoration: none;
-        min-width: 300px;
-        min-height: 60px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 22px;
-        text-transform: uppercase;
-        letter-spacing: 1.3px;
-        font-weight: 700;
-        color: #313133;
-        background: #4FD1C5;
-        background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-        border: none;
-        border-radius: 1000px;
-        box-shadow: 0px 5px 24px rgba(79,209,197,.64);
-        transition: all 0.3s ease-in-out 0s;
-        cursor: pointer;
-        outline: none;
-        position: relative;
-        padding: 10px;
-        }
-      
-        .button::before {
-      content: '';
-        border-radius: 1000px;
-        min-width: calc(300px + 5px);
-        min-height: calc(60px + 5px);
-        border: 6px solid #00FFCB;
-        box-shadow: 0 0 60px rgba(0,255,203,.64);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: all .3s ease-in-out 0s;
-      }
-      
-      .button:hover, .button:focus {
-        color: #ffffff;
-        transform: translateY(-6px);
-      }
-      
-      .button:hover::before, .button:focus::before {
-        opacity: 1;
-      }
-      
-      .button::after {
-        content: '';
-        width: 30px; height: 30px;
-        border-radius: 100%;
-        border: 6px solid #00FFCB;
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: ring 1.5s infinite;
-      }
-      
-      .button:hover::after, .button:focus::after {
-        animation: none;
-        display: none;
-      }
-      
-      @keyframes ring {
-        0% {
-          width: 30px;
-          height: 30px;
-          opacity: 1;
-        }
-        100% {
-          width: 300px;
-          height: 300px;
-          opacity: 0;
-        }
+
       }
       
       *, *:before, *:after {
