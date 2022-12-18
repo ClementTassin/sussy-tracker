@@ -837,6 +837,9 @@ p{
     #timing_t{
         font-size: larger;
     }
+    .rien{
+        display: none;
+    }
     #elec1_t{
         font-size: larger;
     }
@@ -865,10 +868,6 @@ p{
     video{
         display: none;
     }
-    img{
-        display: none;
-    }
-   
     #reac_Bas{
         display: none;
     }

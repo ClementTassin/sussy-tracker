@@ -1329,9 +1329,7 @@ body {
             display:inline-block;
         
             }
-img{
-    display: none;
-}
+
 body{
     position: static;
     margin: 0%;
@@ -1433,6 +1431,9 @@ p{
     font-size: larger;
     display: none;
 }
+.rien{
+    display: none;
+}
 #fiole_t{
     font-size: larger;
 }
@@ -1440,9 +1441,6 @@ p{
     font-size: larger;
 }
 video{
-    display: none;
-}
-img{
     display: none;
 }
 #explication{
