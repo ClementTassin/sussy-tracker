@@ -286,6 +286,9 @@ nav ul ul li {
     width: 100%;
     top: 0%;
 }
+body{
+    margin: 0%;
+}
 
 #Lab_bas {
     position:relative;
