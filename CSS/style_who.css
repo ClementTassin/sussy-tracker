@@ -461,7 +461,9 @@ iframe {
     display: none;
   }
 @media screen and (max-width: 853px) {
-
+    nav a {
+        line-height: 40px;
+    }
     .desc{
         width: 100%;
         padding: 5px;

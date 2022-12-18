@@ -403,9 +403,9 @@ p{
 }
 
 @media screen and (max-width: 660px) {
-    .stick{
-  
-    }
+  nav a {
+    line-height: 40px;
+}
     .footer {
       overflow: hidden;
       flex-direction: column;

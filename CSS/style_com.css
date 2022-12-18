@@ -372,7 +372,9 @@ body {
     box-sizing: border-box;
 }
 @media screen and (max-width: 800px) {
-
+    nav a {
+        line-height: 40px;
+    }
     .texte{
         display: flex;
         flex-direction: column;

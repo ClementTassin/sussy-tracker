@@ -860,6 +860,9 @@ p{
       position: relative;
   }
 @media screen and (max-width: 900px) {
+    nav a {
+        line-height: 40px;
+    }
     #logo{
         height: auto;
         width: 70px;

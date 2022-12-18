@@ -391,6 +391,9 @@ nav ul ul li {
 
 
   @media screen and (max-width: 791px) {
+    nav a {
+      line-height: 40px;
+  }
     #logo3{
   
       width: 0px;

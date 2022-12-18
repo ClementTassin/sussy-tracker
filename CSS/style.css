@@ -559,6 +559,9 @@ nav ul ul li {
 }
 
 @media screen and (max-width: 800px) {
+  nav a {
+    line-height: 40px;
+}
   .footer {
     overflow: hidden;
     flex-direction: column;
